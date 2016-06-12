@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+<head>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20430746-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+  <base href="http://www.robolex.com/tracked-robot/robot-software" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="electronics, electronic, micromouse, touch, touchscreen, STM32, pic, pic18f,  Arm, microcontroller, tutorial, tutorials, robot, microchip, embedded, marios georgiou, hack, voice, recognition, somo14d, somo-14d, home, automation, system,resistor, capacitor, inductor, PC, lights, Egg Collecting, tank , tracks, PSU, current, voltage, tanky, tanky robot, tread, treads, tracked, laser, diode, coherent, 808nm,cortex" />
+  <meta name="title" content="Tracked Mobile Robot - Software" />
+  <meta name="author" content="Administrator" />
+  <meta name="description" content="Electronic stuff!!" />
+  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management" />
+  <title>Tracked Mobile Robot - Software</title>
+  <link href="/templates/rhuk_milkyway/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <script type="text/javascript" src="/media/system/js/mootools.js"></script>
+  <script type="text/javascript" src="/media/system/js/caption.js"></script>
+
+<link rel="stylesheet" href="/templates/system/css/system.css" type="text/css" />
+<link rel="stylesheet" href="/templates/system/css/general.css" type="text/css" />
+<link rel="stylesheet" href="/templates/rhuk_milkyway/css/template.css" type="text/css" />
+<link rel="stylesheet" href="/templates/rhuk_milkyway/css/black.css" type="text/css" />
+<link rel="stylesheet" href="/templates/rhuk_milkyway/css/black_bg.css" type="text/css" />
+<!--[if lte IE 6]>
+<link href="/templates/rhuk_milkyway/css/ieonly.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!-- Start of Lazy Loading Images for Joomla -->
+					<script type='text/javascript' src='/plugins/system/lazyloadingimages/LazyLoad-yui-compressed.js'></script>
+				  <script type='text/javascript'>
+window.addEvent('domready',function() { 
+    var lazyloader = new LazyLoad({
+        range: 200,
+        image: '/plugins/system/lazyloadingimages/blank.gif',
+    });
+});
+</script>
+
+				  <!-- End of Lazy Loading Images for Joomla -->
+				  </head>
+<body id="page_bg" class="color_black bg_black width_fmax">
+<a name="up" id="up"></a>
+<div class="center" align="center">
+	<div id="wrapper">
+		<div id="wrapper_r">
+			<div id="header">
+				<div id="header_l">
+					<div id="header_r">
+						<div id="logo"></div>
+						
+					</div>
+				</div>
+			</div>
+
+			<div id="tabarea">
+				<div id="tabarea_l">
+					<div id="tabarea_r">
+						<div id="tabmenu">
+						<table cellpadding="0" cellspacing="0" class="pill">
+							<tr>
+								<td class="pill_l">&nbsp;</td>
+								<td class="pill_m">
+								<div id="pillmenu">
+									<table width="100%" border="0" cellpadding="0" cellspacing="1"><tr><td nowrap="nowrap"><a href="http://robolex.com/" class="mainlevel" >Home</a><a href="http://robolex.com/high-power-laser-diode" class="mainlevel" >35W Laser Diode</a><a href="http://robolex.com/tracked-robot/introduction" class="mainlevel" >Tanky robot</a><a href="http://robolex.com/rcsystem" class="mainlevel" >Radio control game</a><a href="http://robolex.com/micromouse/micromouse-intro" class="mainlevel" >Micromouse robot</a><a href="http://robolex.com/sauce/sauce-introduction" class="mainlevel" >SAUC-E [AUV]</a></td></tr></table>
+								</div>
+								</td>
+								<td class="pill_r">&nbsp;</td>
+							</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="search">
+				
+			</div>
+
+			<div id="pathway">
+				
+			</div>
+
+			<div class="clr"></div>
+
+			<div id="whitebox">
+				<div id="whitebox_t">
+					<div id="whitebox_tl">
+						<div id="whitebox_tr"></div>
+					</div>
+				</div>
+
+				<div id="whitebox_m">
+					<div id="area">
+									
+
+						<div id="leftcolumn">
+															<div class="module">
+			<div>
+				<div>
+					<div>
+											<ul class="menu"><li class="item1"><a href="http://robolex.com/"><span>Home</span></a></li><li class="item53"><a href="/projects-hub"><span>Projects Hub</span></a></li><li class="parent active item45"><a href="http://robolex.com/tracked-robot/introduction"><span>Tracked Mobile Robot</span></a><ul><li class="item48"><a href="/tracked-robot/introduction"><span>Introduction</span></a></li><li id="current" class="active item47"><a href="/tracked-robot/robot-software"><span>Robot Software</span></a></li><li class="item52"><a href="/tracked-robot/robot-hardware"><span>Robot Hardware</span></a></li><li class="item34"><a href="/tracked-robot/tankys-videos"><span>Tanky's videos</span></a></li></ul></li><li class="item49"><a href="/high-power-laser-diode"><span>High Power Laser Diode</span></a></li><li class="item51"><a href="/rcsystem"><span>Radio Control System</span></a></li><li class="item44"><a href="/diy-high-power-supply-0-12v-0-35a"><span>DIY Power Supply 35A</span></a></li><li class="parent item18"><a href="http://robolex.com/home-automation/introduction"><span>Home Automation</span></a></li><li class="parent item25"><a href="http://robolex.com/sauce/sauce-introduction"><span>SAUC-E AUV</span></a></li><li class="parent item14"><a href="http://robolex.com/micromouse/micromouse-intro"><span>Micromouse Robot</span></a></li><li class="item29"><a href="/egg-collecting-robot"><span>Egg Collecting Robot</span></a></li><li class="item30"><a href="/pc-controlled-lights"><span>PC Controlled Lights</span></a></li><li class="item12"><a href="/about-me"><span>About Me</span></a></li></ul>					</div>
+				</div>
+			</div>
+		</div>
+	
+												</div>
+
+												<div id="maincolumn">
+													
+							<table class="nopad">
+								<tr valign="top">
+									<td>
+										<table class="contentpaneopen">
+<tr>
+		<td class="contentheading" width="100%">
+					Tracked Mobile Robot - Software			</td>
+				
+		
+					</tr>
+</table>
+
+<table class="contentpaneopen">
+
+
+
+<tr>
+<td valign="top">
+<p>The main algorithms are running on the laptop and through a USB to Serial connection the robot microcontroller is interconnected with them. The project is split into the following sections:</p>
+<p><strong>Tasks</strong><br /><strong>• Mapping and localisation in an unknown environment (Robot Perception)</strong><br />The robot is using the RGB-D camera for both odometry estimation and as a range finder.</p>
+<p><strong>• 3D recognition of a pre-specified object (without using colour data) (Robot Perception)</strong><br />The user cycles through the objects, selects the desired object and records the signature of the object.</p>
+<p><strong>• Build a tracked mobile robot that will be able to carry the central processing unit, batteries, sensors (Mobile robotics)</strong><br />The robot is connected to the laptop via a USB-Serial connection. The robot is also is the laptop’s carrier.</p>
+<p><strong>• Use the map and the recognition capabilities to place any objects on the global map in real-time. (Global system integration)</strong></p>
+<p><strong>• Plan the route from point A to B using the generated map, avoiding any obstacles. (Global system integration)</strong></p>
+<p>&nbsp;</p>
+<p style="text-align: center;">&nbsp;<strong style="font-size: 14pt; text-align: center;">Robot Architecture</strong></p>
+<p style="text-align: left;"><span style="font-size: 14pt;"><strong>Overview</strong></span></p>
+<p style="text-align: left;">&nbsp;&nbsp;</p>
+<p style="text-align: justify;">As a whole, the system consists of software running on the laptop that is connected to a microcontroller via USB that is then directly connected to the robot’s hardware such as motor drivers, LEDs, current monitoring, etc. The laptop is running multiple programs, called nodes that are interconnected using a message passing library and tools called “Robot Operating System”. ROS allows multiple programs to communicate and share information using names such “/camera_colour_stream” or “/robot/motor/right/current” called topics. ROS allows building systems that exhibit complex behaviour and favours hierarchical design. The interconnected algorithms are publishing to and/or receiving messages from the microcontroller using a USB to serial bridge. The microcontroller takes care of the robot’s motor speeds, current, LEDs, fail-safe mechanisms and most importantly, package interactions with ROS. The radio control transmitter is used to control the robot when in the manual or head-less mode.</p>
+<p style="text-align: justify;">A high level architecture diagram is shown below.</p>
+<p><img src="/images/images_tracked_robot/tanky_rest/System_arch3.png" width="500" height="555" alt="System arch3" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: justify;">The nodes that build-up the whole robot system were designed with modularity in mind. Each node has a distinct name and carries out a specific task. Each node runs in isolation and publishes and/or subscribes to messages using topics. Topics have names such “/robot/LED/red” of a specific type.&nbsp;In case of a node crashing the rest of the system will still be running. However, each node has to cater for the unexpected and pack fail-safe features that will prevent unexpected behaviour.</p>
+<p>&nbsp;<img src="/images/images_tracked_robot/tanky_rest/full_arch2.jpg" width="780" height="1136" alt="full arch2" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong style="font-size: 19px;">Environment mapping</strong></p>
+<p>&nbsp;&nbsp;</p>
+<p style="text-align: justify;">The mapping functionality is one of the core tasks the robot has to execute. Two algorithms were tested for mapping. One was a ready implementation following the algorithm by Rao and Blackwell [7] and the other was programmed from scratch. The second approach was the one used for the demonstration and it is the one described in this thesis. The Rao’s and Blackwell’s approach and techniques were tested to provide a form of evaluation and performance assessment.</p>
+<p style="text-align: justify;"><br /><strong>Robot mapper</strong><br />The developed mapper can be run simultaneously with the object recognition node or on its own. In case that it runs along with the recognition then the mapper will automatically pick up any recognised objects and place them too on the map. Mapping is a process that requires odometry information to be provided. When the robot faces an object (wall, furniture) the location relative to the robot is known but in order for the map to be consistent, the object has to be translated to the global frame. The mapper node accepts the robot odometry from the transformation tree under the topic (“/tf”). The TF tree is maintained by various nodes that each update their piece of the tree. For example, the odometry node updates the relationship between the global frame and the robot base. In addition to the TF tree, the mapper also subscribes to the camera driver to get the point-cloud data. It also listens for an object pose; in case of the object recognition is running. The output of this node is a “/map” topic that contains the map array along with various meta-data such as resolution, offsets, orientation and timestamps.</p>
+<p style="text-align: center;"><br /> <img src="/images/images_tracked_robot/thesis/image041.png" width="500" height="324" alt="image041" /><br /><br />Figure 20 Mapping node accepting odometry, pointcloud and optionally the object's pose to produce a map</p>
+<p><br />The transformation tree is carrying all the relations between each part of the system. This makes it easy to visualise data hierarchically but also access odometry data and robot link details</p>
+<p>&nbsp;</p>
+<div>
+<div style="text-align: center;"><img src="/images/images_tracked_robot/thesis/image034.png" width="600" height="337" alt="image034" /></div>
+</div>
+<div style="text-align: center;">Figure 21 Simple transformation tree</div>
+<div></div>
+<p>Each frame of the TF tree has a parent and a child. A dynamic link relation changes as the system operates (odometry of the robot relative to the start [0, 0, 0]). A static link describes the properties of the robot e.g. the robot base with camera relationship is shown below.</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><img src="/images/images_tracked_robot/thesis/image044.png" width="500" height="164" alt="image044" /><img src="/images/images_tracked_robot/thesis/image045.png" width="270" height="160" alt="image045" /></p>
+<p style="text-align: center;">Figure 22 How a rigid link is defined as part of the transformation tree (not to scale, edited from [16])</p>
+<p style="text-align: center;">&nbsp;</p>
+<p>A TF link relation is represented by various ways. The most common throughout the system is the use of a translation (X, Y, Z) and a rotation offset as a quaternion (X, Y, Z, W). In case of the above example in Figure 22, the robot_base and robot_camera only have a translation difference. Therefore the translation will be (X: 0.4, Y: 0.0, Z: 0.2) and the rotation quaternion would result in (X: 0.0, Y: 0.0, Z: 0.0, W: 1.0).</p>
+<p>&nbsp;</p>
+<p><strong>Mapper operation</strong></p>
+<p style="text-align: justify;">Once the TF tree is received along with the pointcloud data, the call-back functions in the mapper allow the processing to begin registering the points in space. To create a 2D map we need to get 2D scan of all the distances away from the robot. Normally this would require be a range finder. However since we have the RGB-D camera we instantly have up to 300,000 depth points to our disposal both in the width and height of the scene. Not all these points are necessary for the task of registering and avoiding obstacles and therefore only the points that match the robot’s footprint are used. By overlaying many pointcloud horizontal slices up to the height of the robot we can reduce the data needed down to a height of one point. Using superimposed slices also allows us to mark complicated obstacles like a table. A table that has four legs might be considered as four small obstacles if the robot is small. A big robot that cannot go under the table will mark the whole table as a unified obstacle. The mapping process is very similar to plane rotation using a rotation matrix. The matrix in this case is the odometry matrix that describes the translation and rotation of the robot from the initial 6-D pose. Any point that is received from the camera is paired with the odometry at time t and translated to the global frame. The result is a map that is consistent regardless of the robot’s position and orientation. This process works well, as demonstrated, and allows for maps to be created in 2D but also in 3D.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><br /><img src="/images/images_tracked_robot/thesis/image046.png" width="600" height="242" alt="image046" /></p>
+<p style="text-align: center;">Figure 23 Translating all points from the pointcloud to the global frame results in a 3D map of this corridor</p>
+<p style="text-align: left;"><br />As shown in Figure 23, apart from the 2D map we can map all the points of the pointcloud to produce a better looking 3D map. However a 3D map results to extra, unnecessary processing and therefore not used by the robot for navigation. A 3D map is also prone to an extra dimension of error drifts (translational height drift and rotational roll and pitch drift).</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="/images/images_tracked_robot/thesis/image047.png" width="156" height="200" alt="image047" />&nbsp; &nbsp;&nbsp;<img src="/images/images_tracked_robot/thesis/image048.png" width="167" height="200" alt="image048" />&nbsp;&nbsp;&nbsp;&nbsp;<img src="/images/images_tracked_robot/thesis/image049.png" width="186" height="200" alt="image049" /></p>
+<p style="text-align: center;">Figure 24 From pointcloud data to a 2D map, mapping process viewed in RVIZ</p>
+<p><br />Figure 24 shows a coloured line which is a 2D combination of pointcloud slices that are merged together to produce an output similar to a laser scanner. The colours of the scan are affected and change depending on the distance from the camera.</p>
+<p>&nbsp;</p>
+<p><strong>Memory</strong><br />The map is represented as an occupancy grid in memory and published under the topic “/map” in ROS. An occupancy grid is simply an array or vector that holds a value for each cell. This value is the probability of the cell being occupied. In case of an obstacle, the value ranges from one to one hundred. If there isn’t an obstacle it’s a zero and if unknown it’s minus one. The map is very large in size due to the choice in resolution. The resolution used was 1cm2 that results in an array of hundreds of MB of data. This is where the ROS visualisation software (RVIZ) is useful to visualize large chunks of data streams. <br />A map example is shown below.</p>
+<p style="text-align: center;"><br /> <img src="/images/images_tracked_robot/thesis/image050.png" width="250" height="250" alt="image050" /></p>
+<p style="text-align: center;">Figure 25 Map of a 10x10m environment with furniture</p>
+<p style="text-align: center;">&nbsp;</p>
+<p>&nbsp;</p>
+<p>There have been some issues with the performance of the mapper. Due to its nature, the mapper heavily depends on accurate odometry estimates so that the distances are correctly registered and aligned. However this is not the case since error drifts are always present, especially when there are vibrations from the robot’s movement.</p>
+<p>In the literature, many techniques exist that use an odometry feedback loop. It is used to assist and offset the odometry source, to correct drifts. The most common approaches are highlighted below.</p>
+<p>&nbsp;</p>
+<p><strong>Scan matching for mapping</strong><br />Scan matching is a technique used to improve mapping accuracy by adding offsets to the odometry as mentioned by Grisetti [7]. The robot observes the walls and if there is a slight offset it tries to match the two scans and feed their difference back to the odometry frame. The diagram below shows how the scan-matching interacts with the transformation tree.</p>
+<p><img src="/images/images_tracked_robot/thesis/image051.png" width="600" height="304" alt="image051" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p style="text-align: center;">Figure 26 TF tree with the addition of the scan-matching algorithm</p>
+<p><br />The scan matching algorithm as discussed in the literature is a very simple and powerful concept that prevents maps from becoming corrupted and globally inconsistent. <br />However this technique is mostly used in laser scanners where the viewing angle is around 240 degrees. Performing scan matching on the RGB-D camera’s 57 degree viewing angle, results in unexpected results due to the absence of enough data and details to perform the marching.</p>
+<p><br /><strong>Rao-Blackwellized SLAM comparison</strong></p>
+<p>As mentioned, to be able to properly test the custom implementation of the mapper, a standard mature library was used to test it. The library was the “Gmapping” library that uses Rao-Blackwellized particle filters to create a map. The library uses scan matching along with particle filters that each holds the map instance. The performance was slightly better but due to the narrow viewing angle of the sensor, the scan matching was sometimes mistakenly confusing possible matches. This resulted into offsetting the odometry without the need to do so.<br />If the viewing angle was wider, then the scan matcher would make a significant difference in improving the global consistency of the map. <br />The sensor could spin or two RGB-D cameras could be used together resulting in a far better, detailed scan, which would increase matching accuracy. The latter was tested in early stages but two RGB-D cameras reached the maximum USB motherboard bus limit. The devices stream data at hundreds of MB/s making difficult to use both while having adequate processing power left to process the data.</p>
+<p>&nbsp;</p>
+<p><strong><strong style="font-size: 19px;">3D Object recognition</strong></strong></p>
+<p>&nbsp;</p>
+<p>The 3D object recognition or depth based recognition is the second task that the robot is performing.&nbsp;An object is placed in front of the robot, the robot records the signature of the object and it can then detect the object and place in on its map. The object signature recorded is relying on the object’s curvature and shape information rather than the traditional colour data. This node also accepts the motor values from the system. This helps the algorithm know when the robot is moving and therefore pause the recognition by skipping frames to avoid noisy data. In addition, the algorithm features timers that help the logger node to collect performance information.</p>
+<p><img src="/images/images_tracked_robot/thesis/image052.png" width="500" height="286" alt="image052" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>Before any recognition algorithm is applied to the scene, the pointcloud sample must first undergo many steps that will result in isolation of the points of the object. Since colour is not used, the algorithm has to extract and isolate the points that are representing the object.&nbsp;The pointcloud library offers many existing functions that can be used to filter and process the scene appropriately. The first step is to extract the points (cluster) that represent the possible objects in the scene.</p>
+<p style="text-align: center;"><strong>Camera driver &gt; Pointcloud &gt; Filters &gt; Plane extraction &gt; Cluster extraction &gt;</strong></p>
+<p>Then we process each cluster and apply the algorithm of choice on each.</p>
+<p style="text-align: center;"><strong>&gt; Extract signature of each cluster &gt; Compare signatures against initial recording</strong></p>
+<p>&nbsp;</p>
+<p><strong>Filtering pointcloud</strong><br />Filtering a pointcloud is necessary in order to remove noise and unwanted data from the scene. Filtering noise can be in the form of removing not-a-numbers (NaNs), rejecting outliers or even using a pass-through filter to crop the minimum and maximum limits of the scene. On the other hand, extra filtering might be applied to down sample the pointcloud to reduce computation load. The process of reducing the resolution of a pointcloud is done using a voxel filter. A typical pointcloud of a 640x480 resolution has 307200 points that all carry colour (not used) and depth information at thirty frames per second. The rate that the sensor is producing all these data is in the order of hundreds of megabytes per second and is enough to slow down any algorithm that is listening to the stream.</p>
+<p><br /><span style="text-decoration: underline;">Voxel filter</span><br /><br /></p>
+<p>&nbsp;<img src="/images/images_tracked_robot/thesis/image054.jpg" width="215" height="100" alt="image054" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p style="text-align: center;">Figure 27 Scene of a table and a carton milk box. Left original, right down sampled. [14]</p>
+<p style="text-align: center;">&nbsp;</p>
+<p>&nbsp;</p>
+<p>A voxel filter is used to sample down the pointcloud data. It does so by creating a grid of 3D pixels and volumetrically reducing the number of them that occupy the space.&nbsp;The voxel grid filter takes a leaf size as the only parameter. The leaf size indicates the amount of down sampling that takes place.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><span style="text-decoration: underline;">Pass-through filter</span><br />A pass-through filter crops the point-cloud’s minimum and maximum distance. It accepts two values, one for the minimum and one for the maximum limit. The set values are 0.35 to 3.2 metres.</p>
+<p><br /><strong>Plane Extraction</strong><br />Following the filtering and pre-conditioning of the cloud the next step is to remove the planes. Extraction of planes helps create clusters of the objects on a table without the points representing the table itself.</p>
+<p style="text-align: center;"><br /> <img src="/images/images_tracked_robot/tanky_rest/3dand2dcorrelation.PNG" width="500" height="183" alt="3dand2dcorrelation" style="display: block; margin-left: auto; margin-right: auto;" /><br />Figure 28 Left: 2D snapshot of the scene in the pointcloud (right). In green colour are the points that belong on a plane, in blue are the clustered possible objects, yellow is the detected object (algorithm was set to sphere recognition) and in red is the current cluster that is in the scope and being scanned.</p>
+<p style="text-align: center;">&nbsp;</p>
+<p>Plane extraction works by checking if the XYZ coordinates of a set of points are on a plane. The parameters such as how big the plane should be to be extracted and other tolerances are set to achieve best results for distances of one to five meters.</p>
+<p><span style="text-decoration: underline;">Parameters:</span><br />Distance Threshold – The distance of a point that can be still considered a plane Set to 0.06 metre.<br />Max iterations – The amount of iterations that the loop will execute to scan for planes. Set to 60.<br />Loop stop – Loop stops when the 30% of the cloud remains.</p>
+<p>Extraction of the planes is a necessary step to isolate the points representing the object from the points representing the floor.</p>
+<p>&nbsp;</p>
+<p><strong>Euclidean cluster extraction</strong><br />Cluster segmentation is used as the last step to get a point cloud that represents a possible object. Before this step, all the possible objects in the scene are all in one pointcloud. Our goal is to isolate each cluster into its own set of points.</p>
+<p><span style="text-decoration: underline;">The parameters related to the algorithm are:</span><br />Cluster Tolerance – A distance specified in centimetres that two points can be far but still regarded as the same object. Set to 0.04 metres.<br />Min Cluster Size – Minimum cluster size in points. Set to 40.<br />Max Cluster Size – Maximum cluster size in points. Set to 600.</p>
+<p>&nbsp;</p>
+<p><strong>Viewpoint feature histogram (VFH) signature extraction</strong><br />After the cluster is separated from the scene and looks partially like the images below, it is passed through a viewpoint feature histogram extraction algorithm. The algorithm produces a histogram of 308 bins that its rotation and scale invariant and represents the object’s curvature characteristics.</p>
+<p style="text-align: center;"><img src="/images/images_tracked_robot/thesis/image057.png" width="182" height="150" alt="image057" />&nbsp; &nbsp;&nbsp;<img src="/images/images_tracked_robot/thesis/image058.png" width="173" height="150" alt="image058" /><br />Figure 29 A pointcloud representing a mug. This pointcloud was rendered complete by combining many pointclouds from more than one shots and angles. [14]</p>
+<p><br /><span style="text-decoration: underline;">Operation</span><br />The operation of the VFH algorithm relies on the surface normals (surface curvature) properties of the object. The angles of the surface translated to the centre of the set of points are plotted as a histogram.</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><img src="/images/images_tracked_robot/thesis/image059.png" width="218" height="150" alt="image059" />&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<img src="/images/images_tracked_robot/thesis/image060.png" width="226" height="150" alt="image060" /><br />Figure 30 Angles of the normals translated to the centroid of the object</p>
+<p style="text-align: center;"><img src="/images/images_tracked_robot/thesis/image061.png" width="494" height="240" alt="image061" /><br />Figure 31 Viewpoint histogram of a mug</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: left;"><br />The only parameter for VFH is the neighbour search radius that is set to 0.05 metres.</p>
+<p><br /><strong>Object pose filtering (weights)</strong><br />Once the pose of the object is published by the recognition node, it has to be filtered. The emitted pose is raw and is subject to hysteresis when the robot oscillates between two objects. To accommodate this we pass the pose through a low pass filter that uses weights on each possible object. Assigning weights to the possible object coordinates helps build a belief system that is immune to noise but can still deal with similar objects.</p>
+<p><br /><strong>Object placement in global map</strong><br />The objects that match are also translated in the global map by multiplying with the odometry matrix of the robot. Dealing with the object coordinates in the global map helps take the issue of relative and absolute location out of the table. Once we see a local object relative to the robot we first translate it to the global frame and then compare if an object was seen there before.</p>
+<p style="text-align: center;"><br /> <img src="/images/images_tracked_robot/thesis/image062.png" width="218" height="300" alt="image062" />&nbsp;<img src="/images/images_tracked_robot/thesis/image063.png" width="310" height="300" alt="image063" /><br />Figure 32 Placing objects on the global map. On the right there are green and red markers. The colour indicates the belief of the robot and it’s related to the weight allocated to the object marker</p>
+<p><br /><strong>Limitations</strong><br /> <span style="text-decoration: underline;">Point count degrades with distance</span></p>
+<p>Although the steps of processing a pointcloud from the start to finish are parameterized, there are some factors that limit the range of performance of the algorithms. At first there are the hardware limits of the sensor. The minimum range is 0.4 metres and 10 metres maximum. However above 4 meters the output becomes noisier. The next and biggest limitation is that, even though the structured light of the sensor can reach 10 meters, it does not have adequate resolution of points to represent an object at that distance. An average object (10cx20cm) at 0.4 metres can have 250-400 points that represent it but above 2 meters that number drops to usually 50 points.</p>
+<p>The direct effect of the distance causes the algorithm’s performance to drop significantly at distances greater 2-3 metres. This also adds to the fact that the parameters of the algorithms such as plane and cluster extraction have to accept a variety of object sizes. Accepting sizes for objects below a certain threshold to accommodate this will mostly result in noisier data since most of the noise comes as small sets of random points.</p>
+<p><br /><span style="text-decoration: underline;">Parameter number</span><br />The number of different parameters is also a tedious process where every parameter of each stage has the potential of breaking the next processing stage.</p>
+<p>The most important parameters of each stage are listed below.</p>
+<p><span style="text-decoration: underline;"><em>Filtering</em></span><br />-Voxel -&nbsp;Leaf size</p>
+<p>-Pass-through &nbsp;-&nbsp;Filter limits (min &amp; max)</p>
+<p><span style="text-decoration: underline;"><em>Plane Extraction</em></span></p>
+<p>Distance Threshold</p>
+<p>Max iterations</p>
+<p>Loop stop</p>
+<p><em><span style="text-decoration: underline;">Cluster Extraction</span></em></p>
+<p>Cluster Tolerance</p>
+<p>Min Cluster Size</p>
+<p>Max Cluster Size</p>
+<p><span style="text-decoration: underline;"><em>Viewpoint Feature Histogram</em></span></p>
+<p>Neighbour search radius</p>
+<p>&nbsp;</p>
+<p>In case of a change in the Voxel’s filter leaf size, the point-cloud might not go through the next stages due to the minimum cluster size. Changing the minimum cluster size would allow objects with fewer points (therefore less information) to be regarded as potential objects. This will make the algorithm pick up more noise. This shows how optimising for speed would induce more noise in the system.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong><strong style="font-size: 19px;">Path planning&nbsp;</strong></strong></p>
+<p style="display: inline !important;">&nbsp;</p>
+<p style="display: inline !important;">The path planning functionality was added to enhance the interaction between the algorithms and the robot platform itself. The previous two developed algorithms, mapping and object recognition, could easily be self-contained in a terminal without the need of a robot. The aim of this added functionality is to have the algorithm command the robot to move on a path, calculated from the map that in turn was generated by the mapper node. Path planning was not included in the initial objective list, in the beginning of the project but was later on added to enhance the algorithms-robot interaction. The selected way to solve the path planning problem was using the flood fill algorithm. To realise the algorithms, two nodes were developed, one to calculate the path using the map and the second to drive the robot.</p>
+<p style="text-align: center;"><br /> <img src="/images/images_tracked_robot/thesis/image064.png" width="750" height="173" alt="image064" style="display: block; margin-left: auto; margin-right: auto;" />Figure 33 Block diagrams of the path and mission planner nodes</p>
+<p>&nbsp;</p>
+<p><strong>Flood fill</strong><br />Flood fill works on maps, mazes and generally any form of data that can be chopped and organised into cells. The map of the environment is itself split into 1cm2 cells. This means that a 10x10 meter map will have one million cells. Iterating through data of this magnitude has a severe effect on responsiveness and robot’s ability to continuously generate a path on the fly.<br />Since the map obstacles are represented with numbers (1-100), the algorithm floods the cells that are zero (not occupied) and minus one (not visited). There is no need to differentiate between an explored and a not explored cell because the robot’s strategy is to plan like there are no walls until seen.</p>
+<p style="text-align: center;"><br /> <img src="/images/images_tracked_robot/thesis/image065.jpg" width="189" height="150" alt="image065" />&nbsp;<img src="/images/images_tracked_robot/thesis/image066.png" width="228" height="150" alt="image066" />&nbsp;<img src="/images/images_tracked_robot/thesis/image067.png" width="215" height="150" alt="image067" /></p>
+<p style="text-align: center;">Figure 34 How the map is stored in memory. Each 1cm2 of the environment is an array element.</p>
+<p><br /><span style="text-decoration: underline;">Operation</span></p>
+<p>The target is first specified to the robot by the user. The goal pose is published in ROS under the topic “/goal_pose”. It is then received by the mapper along with the robot’s current position from the “/tf” topic. The flooding routine is started, once the start and goal positions are received. The algorithm starting from the goal cell increments each neighbouring cell by one. The process gets halted if the start cell is reached or if a regional checkpoint is reached. A checkpoint is placed every metre that is scanned, without a solution. At first the algorithm starts with one meter radius checking if a solution exists and then resets and starts again but at two meters. The reason for this is to avoid searching and iterating through a radius bigger than needed. Iterating through unnecessary radii is very costly causing each of the iterations to slow down within the loop resulting in an exponential increase in duration.</p>
+<p style="text-align: center;"><img src="/images/images_tracked_robot/thesis/image068.jpg" width="320" height="256" alt="image068" /><br />Figure 35 Cell increment away from the goal</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><br /> <img src="/images/images_tracked_robot/thesis/image069.jpg" width="320" height="288" alt="image069" /><br />Figure 36 The tracing of the path generated acts like water flowing through the path of least resistance</p>
+<p style="text-align: center;">&nbsp;</p>
+<p>Once all the cells are flooded and allocated a number, tracing and generating the path becomes a simple procedure. The tracer would just follow the neighbour with the least number, just as water would flow through the path of least resistance.</p>
+<p><br /><strong>Obstacle inflation</strong><br />While the planning algorithm produces a valid path when given a map, it does not take into account the robot dimensions. This results into potential collisions by driving very close to walls and obstacles. In order to provide enough clearance for the robot a simple technique called obstacle inflation is used. Before the flood fill algorithm begins, the obstacle inflation is called. The routine gets the position of the robot and uses that to inflate only what’s needed to reach the goal. Again selective processing techniques are used to minimise processing times.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="/images/images_tracked_robot/thesis/image070.png" width="500" height="358" alt="image070" /></p>
+<p style="text-align: center;">Figure 37 Dynamic obstacle inflation is applied only in the region around the robot</p>
+<p>&nbsp;</p>
+<p><strong>Path tracing by the robot mission planner</strong><br />After the path is ready it is published under the name “/goal_path” of type &lt;nav_msgs::Path&gt;. The mission planner subscribes to the path message which is a collection of pathway points and a timestamp. The robot mission node, as shown in Figure 33, scans the path message and finds which point is closer to the robot. From that point and on, the robot is commanded to reach the next point in the path. The resolution of the path array is very fine that multiple points fall within the robot’s footprint. In this case the algorithm sets the local target goal to a few points ahead instead of to the absolute next path point. Since the robot is of a differential drive type, simple trigonometry is used to keep the robot on track along the path way-points.</p>
+<p><br /><strong>Optimisations</strong> <br />Processing speed of the algorithm is key to achieve real-time performance. The algorithm must conclude with a path fast enough so that the robot can have the green light to continue and preferably without stopping. A combination of a hybrid tree structure was developed to make things faster. The algorithm starts exploring a solution from point A to B. It first sets the width and height to plus/minus one meter. One metre with a resolution of one centimetre squared results in an array of 100x100. For the complete path generation the array is also multiplied once more with its size. The total of average cycles for one metre is 100x100x100 resulting in one million iterations roughly. <br />If a solution is not found then the algorithm increases the range of its search radius. A two metre radius would result in eight million iterations which clearly show that it is more efficient to start with a minimal radius and the increment once at a time.<br />With this optimisation the path generation takes from less than a second up to ten seconds compared to the previous version that always needed ten seconds.</p>
+<p>&nbsp;</p>
+<p style="display: inline !important;">&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong><strong style="font-size: 19px;"><strong style="font-size: 19px;"><strong><strong style="font-size: 19px;">Microcontroller Software</strong></strong></strong></strong></strong></p>
+<p>&nbsp;</p>
+<p>The microcontroller software is responsible for a number of tasks. Once booted the microcontroller initialises the driver along with the rest of the hardware. The first two seconds of boot-up the microcontroller also waits for a button press. If pressed it allows the robot to go into headless mode allowing for any mode to be selected using the push button. Next it listens for a serial connection with the laptop while looping through the rest tasks. Connected or not the robot will execute the same tasks, the same way every time. If there is no connection between the laptop or the user did not specify then the hard-coded defaults are be used.</p>
+<p>The main tasks of the microcontroller are:<br />• Establish connection with the laptop<br />• Read current sensors<br />• Read R/C signals<br />• Subscribe via callbacks to all the topics starting with “/robot/* ” if connection is made<br />• Publish all data in ROS via serial if connection is made<br />• Cap the motor values to the specified value<br />• Update the motor values</p>
+<p>A block diagram representation of the microcontroller interactions is shown below.</p>
+<p><img src="/images/images_tracked_robot/thesis/image088.png" width="450" height="591" alt="image088" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>&nbsp;&nbsp;&nbsp;</p>
+<p style="text-align: center;">Figure 47 Abstract level flowchart, shows the topics that are interconnected with the robot microcontroller.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></td>
+</tr>
+
+</table>
+<span class="article_separator">&nbsp;</span>
+
+										
+									</td>
+																	</tr>
+							</table>
+
+						</div>
+						<div class="clr"></div>
+					</div>
+					<div class="clr"></div>
+				</div>
+
+				<div id="whitebox_b">
+					<div id="whitebox_bl">
+						<div id="whitebox_br"></div>
+					</div>
+				</div>
+			</div>
+
+			<div id="footerspacer"></div>
+		</div>
+
+		<div id="footer">
+			<div id="footer_l">
+				<div id="footer_r">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>
+					<p id="syndicate">
+						
+					</p>
+					<p id="power_by">
+	 				 	Powered by <a href="http://www.robolex.com/about-me">MG2L!</a>.
+						valid <a href="http://validator.w3.org/check/referer">XHTML</a> and <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

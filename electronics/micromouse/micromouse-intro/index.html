@@ -1,0 +1,536 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+<head>
+	  <base href="http://robolex.com/electronics/micromouse/micromouse-intro" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="electronics, electronic, micromouse, touch, touchscreen, STM32, pic, pic18f,  Arm, microcontroller, tutorial, tutorials, robot, microchip, embedded, marios, hack, voice, recognition, somo14d, somo-14d, home, automation, system,resistor, capacitor, inductor, PC, lights, Egg Collecting" />
+  <meta name="title" content="Micromouse Intro" />
+  <meta name="author" content="Administrator" />
+  <meta name="description" content="Electronic tutorials and hacks!!" />
+  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management" />
+  <title>Micromouse Intro</title>
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="/components/com_gantry/css/css-cb23d447b66359d91b66e4dead744074.php" type="text/css" />
+  <link rel="stylesheet" href="/templates/rt_quantive_j15/css/css-d4c218906769363450c4b7de211bcbec.php" type="text/css" />
+  <link rel="stylesheet" href="/templates/rt_quantive_j15/css/css-5c15a7f2df70e4e65d08cac250ffd559.php" type="text/css" />
+  <style type="text/css">
+    <!--
+.besps_holder_6_0 {width:400px;height:322px;}
+.besps_ctrls_6_0 {display:block;width:400px;padding-top:303px;text-align:right;}
+.besps_holder_6_0 {margin:auto;padding:0;display:block;}
+.besps_slides_6_0 {position:absolute;width:400px;height:300px;}
+.besps_slides_6_0 div {visibility:hidden;z-index:1;position:absolute;left:0;top:0;width:400px;height:300px;background-color:#FFFFFF;}
+.besps_slides_6_0 div img {position:absolute;}
+#img_6_0_1 {visibility:visible;z-index:2;}
+#rt-main-surround ul.menu li.active > a, #rt-main-surround ul.menu li.active > .separator, #rt-main-surround ul.menu li.active > .item, #rt-main-surround .square4 ul.menu li:hover > a, #rt-main-surround .square4 ul.menu li:hover > .item, #rt-main-surround .square4 ul.menu li:hover > .separator, .roktabs-links ul li.active span {color:#0f6602;}
+a, #rt-main-surround ul.menu a:hover, #rt-main-surround ul.menu .separator:hover, #rt-main-surround ul.menu .item:hover {color:#0f6602;}body #rt-logo {width:298px;height:75px;}
+    -->
+  </style>
+  <script type="text/javascript" src="/media/system/js/mootools.js"></script>
+  <script type="text/javascript" src="/media/system/js/caption.js"></script>
+  <script type="text/javascript" src="http://robolex.com/plugins/content/plugin_besps/besps.js"></script>
+  <script type="text/javascript" src="/cache/js-d52bcb3d167bea6d4f208c2c05eabf47.php"></script>
+  <script type="text/javascript">
+var besps_prearr_6_0=new Array("/images//images_micromouse/aaaaaaaaaaaa.jpg","/images//images_micromouse/IMG_1762-resized.jpg","/images//images_micromouse/IMG_1199-resized.jpg","/images//images_micromouse/IMG_1547-resized.jpg","/images//images_micromouse/IMG_2072-resized.jpg","/images//images_micromouse/IMG_1173-resized.jpg","/images//images_micromouse/IMG_1187-resized.jpg","/images//images_micromouse/IMG_2076-resized.jpg","/images//images_micromouse/IMG_1550-resized.jpg","/images//images_micromouse/IMG_1808-resized.jpg","/images//images_micromouse/IMG_2071-resized.jpg","/images//images_micromouse/IMG_1815.JPG","/images//images_micromouse/IMG_1798-resized.jpg","/images//images_micromouse/IMG_1181-resized.jpg","/images//images_micromouse/IMG_2067-resized.jpg","/images//images_micromouse/IMG_1750-resized.jpg","/images//images_micromouse/IMG_1202-resized.jpg","/images//images_micromouse/IMG_1192-resized.jpg","/images//images_micromouse/IMG_1813-resized.jpg","/images//images_micromouse/IMG_1182-resized.jpg","/images//images_micromouse/IMG_1180-resized.jpg","/images//images_micromouse/IMG_1197-resized.jpg","/images//images_micromouse/IMG_1198-resized.jpg","/images//images_micromouse/IMG_0497-resized.jpg","/images//images_micromouse/pic18tqfp1-resized.jpg","/images//images_micromouse/IMG_1188-resized.jpg","/images//images_micromouse/IMG_1179-resized.jpg","/images//images_micromouse/IMG_1176-resized.jpg","/images//images_micromouse/IMG_1193-resized.jpg","/images//images_micromouse/Photo-0043-resized.jpg","/images//images_micromouse/IMG_1172-resized.jpg","/images//images_micromouse/IMG_1196-resized.jpg","/images//images_micromouse/IMG_1178-resized.jpg","/images//images_micromouse/IMG_1815-resized.jpg","/images//images_micromouse/Fotos-0006-resized.jpg","/images//images_micromouse/IMG_2065-resized.jpg","/images//images_micromouse/IMG_1548-resized.jpg","/images//images_micromouse/IMG_1177-resized.jpg","/images//images_micromouse/IMG_1155-resized.jpg","/images//images_micromouse/IMAG0075-resized.jpg","/images//images_micromouse/IMG_1812-resized.jpg","/images//images_micromouse/IMG_1189-resized.jpg","/images//images_micromouse/IMG_2069-resized.jpg","/images//images_micromouse/IMG_1171-resized.jpg","/images//images_micromouse/IMG_2077-resized.jpg","/images//images_micromouse/IMG_1191-resized.jpg","/images//images_micromouse/IMG_2079-resized.jpg","/images//images_micromouse/IMG_1544-resized.jpg","/images//images_micromouse/IMG_2068-resized.jpg","/images//images_micromouse/IMG_1774-resized.jpg","/images//images_micromouse/IMG_0486-resized.jpg","/images//images_micromouse/IMG_2078-resized.jpg","/images//images_micromouse/IMG_1195-resized.jpg","/images//images_micromouse/IMG_1545-resized.jpg","/images//images_micromouse/IMG_1201-resized.jpg","/images//images_micromouse/IMG_1174-resized.jpg","/images//images_micromouse/IMG_1546-resized.jpg","/images//images_micromouse/IMG_2070-resized.jpg","/images//images_micromouse/IMAG0076-resized.jpg","/images//images_micromouse/IMG_2073-resized.jpg","/images//images_micromouse/IMG_1194-resized.jpg","/images//images_micromouse/mic-resized.jpg","/images//images_micromouse/pic18tqfp-resized.jpg","/images//images_micromouse/Fotos-0005-resized.jpg","/images//images_micromouse/IMG_2075-resized.jpg","/images//images_micromouse/IMG_1549-resized.jpg","/images//images_micromouse/IMG_1175-resized.jpg");
+var besps_6_0= new besps_slideshow("6_0",50,3000,20,1,70,"NOCAPS",besps_prearr_6_0);window.addEvent('domready', function() {new GantrySmartLoad({'offset': {'x': 10, 'y': 10}, 'placeholder': '/templates/rt_quantive_j15/images/blank.gif', 'exclusion': ['ul.menutop span.image']}); });
+			window.addEvent('domready', function() {
+				var modules = ['rt-block'];
+				var header = ['h3','h2','h1'];
+				GantryBuildSpans(modules, header);
+			});
+		InputsExclusion.push('.content_vote','#rt-popup')
+		        window.addEvent('load', function() {
+					new Fusion('ul.menutop', {
+						pill: 0,
+						effect: 'slide',
+						opacity: 1,
+						hideDelay: 70,
+						centered: 0,
+						tweakInitial: {'x': -2, 'y': 0},
+        				tweakSubsequent: {'x': 0, 'y': -14},
+						menuFx: {duration: 100, transition: Fx.Transitions.Quad.easeIn},
+						pillFx: {duration: 400, transition: Fx.Transitions.Back.easeOut}
+					});
+	            });
+  </script>
+  <link href="http://robolex.com/plugins/content/plugin_besps/besps.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20430746-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</head>
+	<body  class="backgroundlevel-high backgroundstyle-style5 bodylevel-high bodystyle-light cssstyle-style5 logostyle-light font-family-helvetica font-size-is-default menu-type-fusionmenu col12 menu-micromouse-intro option-com-content view-article">
+		<div id="rt-main-background">
+			<div class="rt-container">
+																<div id="rt-header">
+					<div class="rt-grid-9 rt-alpha rt-omega">
+    			<div class="rt-block">
+    	    	<a href="/" id="rt-logo"></a>
+    		</div>
+	    
+</div>
+					<div class="clear"></div>
+				</div>
+																<div id="rt-navigation"><div id="rt-navigation2"><div id="rt-navigation3">
+					
+<div class="nopill">
+	<ul class="menutop level1 " >
+						<li class="item1 root" >
+					<a class="orphan item bullet" href="http://robolex.com/"  >
+				<span>
+			    				Home				   
+				</span>
+			</a>
+			
+			
+	</li>	
+							<li class="item11 parent root" >
+					<a class="daddy item bullet" href="/general-hacks"  >
+				<span>
+			    				General hacks				   
+				</span>
+			</a>
+			
+					<div class="fusion-submenu-wrapper level2">
+				<div class="drop-top"></div>
+				<ul class="level2">
+								
+							<li class="item21 parent" >
+					<a class="daddy item bullet" href="/general-hacks/wiiwhiteboard"  >
+				<span>
+			    				WiiWhiteboard				   
+				</span>
+			</a>
+			
+					<div class="fusion-submenu-wrapper level3">
+				<div class="drop-top"></div>
+				<ul class="level3">
+								
+							<li class="item22" >
+					<a class="orphan item bullet" href="/general-hacks/wiiwhiteboard/intro"  >
+				<span>
+			    				Introduction				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item23" >
+					<a class="orphan item bullet" href="/general-hacks/wiiwhiteboard/parts-needed"  >
+				<span>
+			    				Parts needed				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div>
+			
+	</li>	
+										</ul>
+			</div>
+			
+	</li>	
+							<li class="item9 parent active root" >
+					<a class="daddy item bullet" href="/electronics"  >
+				<span>
+			    				Electronics				   
+				</span>
+			</a>
+			
+					<div class="fusion-submenu-wrapper level2">
+				<div class="drop-top"></div>
+				<ul class="level2">
+								
+							<li class="item18 parent" >
+					<a class="daddy item bullet" href="/electronics/home-automation"  >
+				<span>
+			    				Home Automation				   
+				</span>
+			</a>
+			
+					<div class="fusion-submenu-wrapper level3">
+				<div class="drop-top"></div>
+				<ul class="level3">
+								
+							<li class="item26" >
+					<a class="orphan item bullet" href="/electronics/home-automation/introduction"  >
+				<span>
+			    				Introduction				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div>
+			
+	</li>	
+									
+							<li class="item14 parent active" >
+					<a class="daddy item bullet" href="/electronics/micromouse"  >
+				<span>
+			    				Micromouse				   
+				</span>
+			</a>
+			
+					<div class="fusion-submenu-wrapper level3">
+				<div class="drop-top"></div>
+				<ul class="level3">
+								
+							<li class="item15 active" >
+					<a class="orphan item bullet" href="/electronics/micromouse/micromouse-intro"  >
+				<span>
+			    				Introduction				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item16" >
+					<a class="orphan item bullet" href="/electronics/micromouse/design"  >
+				<span>
+			    				Design				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item19" >
+					<a class="orphan item bullet" href="/electronics/micromouse/videos"  >
+				<span>
+			    				Videos				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div>
+			
+	</li>	
+									
+							<li class="item29" >
+					<a class="orphan item bullet" href="/electronics/egg-collecting-robot"  >
+				<span>
+			    				Egg Collecting Robot				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item30" >
+					<a class="orphan item bullet" href="/electronics/pc-controlled-lights"  >
+				<span>
+			    				PC Controlled Lights				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div>
+			
+	</li>	
+							<li class="item25 parent root" >
+					<a class="daddy item bullet" href="/sauce"  >
+				<span>
+			    				SAUC-E				   
+				</span>
+			</a>
+			
+					<div class="fusion-submenu-wrapper level2">
+				<div class="drop-top"></div>
+				<ul class="level2">
+								
+							<li class="item31" >
+					<a class="orphan item bullet" href="/sauce/submarine-competition-details"  >
+				<span>
+			    				Submarine Competition				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item27" >
+					<a class="orphan item bullet" href="/sauce/brl-website"  >
+				<span>
+			    				BRL Website				   
+				</span>
+			</a>
+			
+			
+	</li>	
+									
+							<li class="item28" >
+					<a class="orphan item bullet" href="/sauce/fluid-robotics"  >
+				<span>
+			    				Fluid Robotics				   
+				</span>
+			</a>
+			
+			
+	</li>	
+										</ul>
+			</div>
+			
+	</li>	
+							<li class="item12 root" >
+					<a class="orphan item bullet" href="/about-me"  >
+				<span>
+			    				About Me				   
+				</span>
+			</a>
+			
+			
+	</li>	
+				</ul>
+</div>
+
+				    <div class="clear"></div>
+				</div></div></div>
+												<div class="rt-surround"><div class="rt-surround2"><div class="rt-surround3">
+															<div id="rt-main-surround">
+																							              <div id="rt-main" class="sa3-mb6-sb3">
+                <div class="rt-main-inner">
+                    <div class="rt-grid-6 rt-push-3">
+                                                <div class="rt-block">
+                            							<div class="default">
+							<div class="rt-module-surround">
+								<div class="rt-module-top"><div class="rt-module-top2"><div class="rt-module-top3"></div></div></div>
+								<div class="rt-module-inner">
+		                            <div id="rt-mainbody">
+		                                
+<div class="rt-joomla ">
+	<div class="rt-article">
+		
+				<div class="rt-headline"><h1 class="rt-article-title">Micromouse Intro</h1>		</div>
+		<div class="clear"></div>
+		
+		
+		
+		
+		
+		<p>Micromouse is an event where small robot mice solve a 16x16 maze. It began in late 1970s, although there is some indication of events in 1950.</p>
+<p>Events are held worldwide, and are most popular in the UK, U.S., Japan, Singapore, India and South Korea.</p>
+<p>The maze is made up of a 16 by 16 grid of cells, each 180 mm square with walls 50 mm high. The mice are completely autonomous robots that must find their way from a predetermined starting position to the central area of the maze unaided. The mouse will need to keep track of where it is, discover walls as it explores, map out the maze and detect when it has reached the goal. Having reached the goal, the mouse will typically perform additional searches of the maze until it has found an optimal route from the start to the center. Once the optimal route has been found, the mouse will run that route in the shortest possible time.Mice can run at up to three meters per second, with current world records around 6~7 seconds, depending on the maze design.</p>
+<p>Mice can use various searching algorithms. Two of the more popular ones are A* and Bellman-based flood-fill searches.</p>
+<p><strong>Some videos of the robot in action <a href="/electronics/micromouse/videos">here!</a></strong></p>
+
+<div class='besps_holder besps_holder_6_0'>
+<div class='besps_slides besps_slides_6_0'>
+<div id='img_6_0_1'><img src='http://robolex.com/images//images_micromouse/IMG_2066-resized.jpg' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_2066-resized' title='IMG_2066-resized'/></div>
+<div id='img_6_0_2'><img src='http://robolex.com/images//images_micromouse/IMG_0307-resized.jpg' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_0307-resized' title='IMG_0307-resized'/></div>
+<div id='img_6_0_3'><img src='http://robolex.com/images//images_micromouse/IMG_1798.JPG' style='left:0px;top:0px;width:400px;height:300px;' alt='IMG_1798' title='IMG_1798'/></div>
+<div id='img_6_0_4'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:2px;top:0px;width:396px;height:300px;' alt='aaaaaaaaaaaa' title='aaaaaaaaaaaa'/></div>
+<div id='img_6_0_5'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1762-resized' title='IMG_1762-resized'/></div>
+<div id='img_6_0_6'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1199-resized' title='IMG_1199-resized'/></div>
+<div id='img_6_0_7'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1547-resized' title='IMG_1547-resized'/></div>
+<div id='img_6_0_8'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_2072-resized' title='IMG_2072-resized'/></div>
+<div id='img_6_0_9'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1173-resized' title='IMG_1173-resized'/></div>
+<div id='img_6_0_10'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1187-resized' title='IMG_1187-resized'/></div>
+<div id='img_6_0_11'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_2076-resized' title='IMG_2076-resized'/></div>
+<div id='img_6_0_12'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1550-resized' title='IMG_1550-resized'/></div>
+<div id='img_6_0_13'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1808-resized' title='IMG_1808-resized'/></div>
+<div id='img_6_0_14'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_2071-resized' title='IMG_2071-resized'/></div>
+<div id='img_6_0_15'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:300px;' alt='IMG_1815' title='IMG_1815'/></div>
+<div id='img_6_0_16'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1798-resized' title='IMG_1798-resized'/></div>
+<div id='img_6_0_17'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1181-resized' title='IMG_1181-resized'/></div>
+<div id='img_6_0_18'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_2067-resized' title='IMG_2067-resized'/></div>
+<div id='img_6_0_19'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1750-resized' title='IMG_1750-resized'/></div>
+<div id='img_6_0_20'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1202-resized' title='IMG_1202-resized'/></div>
+<div id='img_6_0_21'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1192-resized' title='IMG_1192-resized'/></div>
+<div id='img_6_0_22'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1813-resized' title='IMG_1813-resized'/></div>
+<div id='img_6_0_23'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1182-resized' title='IMG_1182-resized'/></div>
+<div id='img_6_0_24'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1180-resized' title='IMG_1180-resized'/></div>
+<div id='img_6_0_25'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1197-resized' title='IMG_1197-resized'/></div>
+<div id='img_6_0_26'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1198-resized' title='IMG_1198-resized'/></div>
+<div id='img_6_0_27'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_0497-resized' title='IMG_0497-resized'/></div>
+<div id='img_6_0_28'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:26px;width:400px;height:247px;' alt='pic18tqfp1-resized' title='pic18tqfp1-resized'/></div>
+<div id='img_6_0_29'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1188-resized' title='IMG_1188-resized'/></div>
+<div id='img_6_0_30'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1179-resized' title='IMG_1179-resized'/></div>
+<div id='img_6_0_31'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1176-resized' title='IMG_1176-resized'/></div>
+<div id='img_6_0_32'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1193-resized' title='IMG_1193-resized'/></div>
+<div id='img_6_0_33'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:300px;' alt='Photo-0043-resized' title='Photo-0043-resized'/></div>
+<div id='img_6_0_34'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1172-resized' title='IMG_1172-resized'/></div>
+<div id='img_6_0_35'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1196-resized' title='IMG_1196-resized'/></div>
+<div id='img_6_0_36'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1178-resized' title='IMG_1178-resized'/></div>
+<div id='img_6_0_37'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1815-resized' title='IMG_1815-resized'/></div>
+<div id='img_6_0_38'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='Fotos-0006-resized' title='Fotos-0006-resized'/></div>
+<div id='img_6_0_39'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_2065-resized' title='IMG_2065-resized'/></div>
+<div id='img_6_0_40'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1548-resized' title='IMG_1548-resized'/></div>
+<div id='img_6_0_41'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1177-resized' title='IMG_1177-resized'/></div>
+<div id='img_6_0_42'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1155-resized' title='IMG_1155-resized'/></div>
+<div id='img_6_0_43'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:87px;top:0px;width:225px;height:300px;' alt='IMAG0075-resized' title='IMAG0075-resized'/></div>
+<div id='img_6_0_44'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1812-resized' title='IMG_1812-resized'/></div>
+<div id='img_6_0_45'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1189-resized' title='IMG_1189-resized'/></div>
+<div id='img_6_0_46'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_2069-resized' title='IMG_2069-resized'/></div>
+<div id='img_6_0_47'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1171-resized' title='IMG_1171-resized'/></div>
+<div id='img_6_0_48'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_2077-resized' title='IMG_2077-resized'/></div>
+<div id='img_6_0_49'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1191-resized' title='IMG_1191-resized'/></div>
+<div id='img_6_0_50'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_2079-resized' title='IMG_2079-resized'/></div>
+<div id='img_6_0_51'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1544-resized' title='IMG_1544-resized'/></div>
+<div id='img_6_0_52'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_2068-resized' title='IMG_2068-resized'/></div>
+<div id='img_6_0_53'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1774-resized' title='IMG_1774-resized'/></div>
+<div id='img_6_0_54'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_0486-resized' title='IMG_0486-resized'/></div>
+<div id='img_6_0_55'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_2078-resized' title='IMG_2078-resized'/></div>
+<div id='img_6_0_56'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1195-resized' title='IMG_1195-resized'/></div>
+<div id='img_6_0_57'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1545-resized' title='IMG_1545-resized'/></div>
+<div id='img_6_0_58'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1201-resized' title='IMG_1201-resized'/></div>
+<div id='img_6_0_59'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1174-resized' title='IMG_1174-resized'/></div>
+<div id='img_6_0_60'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1546-resized' title='IMG_1546-resized'/></div>
+<div id='img_6_0_61'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_2070-resized' title='IMG_2070-resized'/></div>
+<div id='img_6_0_62'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:40px;top:30px;width:319px;height:239px;' alt='IMAG0076-resized' title='IMAG0076-resized'/></div>
+<div id='img_6_0_63'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_2073-resized' title='IMG_2073-resized'/></div>
+<div id='img_6_0_64'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1194-resized' title='IMG_1194-resized'/></div>
+<div id='img_6_0_65'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:135px;top:102px;width:130px;height:95px;' alt='mic-resized' title='mic-resized'/></div>
+<div id='img_6_0_66'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:300px;' alt='pic18tqfp-resized' title='pic18tqfp-resized'/></div>
+<div id='img_6_0_67'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='Fotos-0005-resized' title='Fotos-0005-resized'/></div>
+<div id='img_6_0_68'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_2075-resized' title='IMG_2075-resized'/></div>
+<div id='img_6_0_69'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1549-resized' title='IMG_1549-resized'/></div>
+<div id='img_6_0_70'><img src='http://robolex.com/plugins/content/plugin_besps/besps.png' style='left:0px;top:0px;width:400px;height:299px;' alt='IMG_1175-resized' title='IMG_1175-resized'/></div></div>
+
+<div class='besps_caps besps_caps_6_0' id='bs_caps_6_0'></div>
+<div class='besps_ctrls besps_ctrls_6_0'><div class='besps_ctrl_left'><span id='besps_counter_6_0' class='besps_counter'>01/70</span>&nbsp;</div><div class='besps_ctrl_right'><a href='javascript:besps_6_0.b_start();'><img src='http://robolex.com/plugins/content/plugin_besps/start.png' alt='start'/></a>&nbsp;<a href='javascript:besps_6_0.b_stop();'><img src='http://robolex.com/plugins/content/plugin_besps/stop.png' alt='stop'/></a>&nbsp;<a href='javascript:besps_6_0.b_back();'><img src='http://robolex.com/plugins/content/plugin_besps/bwd.png' alt='bwd'/></a>&nbsp;<a href='javascript:besps_6_0.b_forw();'><img src='http://robolex.com/plugins/content/plugin_besps/fwd.png' alt='fwd'/></a></div></div>
+</div>
+
+					</div>
+</div>
+		                            </div>
+									<div class="clear"></div>
+								</div>
+								<div class="rt-module-bottom"><div class="rt-module-bottom2"><div class="rt-module-bottom3"></div></div></div>
+							</div>
+							</div>
+                                                    </div>
+                                            </div>
+                                <div class="rt-grid-3 rt-pull-6">
+                <div id="rt-sidebar-a">
+                                        <div class="rt-block">
+				<div class="rt-module-surround">
+					<div class="rt-module-top"><div class="rt-module-top2"><div class="rt-module-top3"></div></div></div>
+					<div class="rt-module-inner">
+	                							<div class="module-title"><h2 class="title">Current Projects</h2></div>
+						<div class="clear"></div>
+		                						<div class="module-content">
+		                	<ul>
+<li><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a href="/electronics/home-automation">Home automation</a></span></li>
+<li><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a href="/general-hacks/wiiwhiteboard">Wii Whiteboard</a></span></li>
+<li><span face="arial, helvetica, sans-serif" size="2" style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a href="/electronics/micromouse/micromouse-intro">Maze Solving Robot</a></span></li>
+<li><span style="font-family: arial, helvetica, sans-serif; font-size: 10pt;"><a href="/electronics/egg-collecting-robot">Egg Collecting Robot</a></span></li>
+<li><span style="font-size: 10pt;"><span style="font-family: arial, helvetica, sans-serif;"><a href="/electronics/egg-collecting-robot"></a></span><a href="/sauce/submarine-competition-details">SAUC-E</a></span></li>
+<li><span style="font-size: 10pt;"><a href="/sauce/submarine-competition-details"></a><span style="font-family: arial, helvetica, sans-serif;"><a href="/electronics/pc-controlled-lights">PC Controlled Lights</a></span></span></li>
+</ul>						</div>
+					</div>
+					<div class="rt-module-bottom"><div class="rt-module-bottom2"><div class="rt-module-bottom3"></div></div></div>
+				</div>
+            </div>
+        	
+                </div>
+            </div>
+
+            <div class="rt-grid-3">
+                <div id="rt-sidebar-b">
+                                        <div class="rt-block">
+				<div class="rt-module-surround">
+					<div class="rt-module-top"><div class="rt-module-top2"><div class="rt-module-top3"></div></div></div>
+					<div class="rt-module-inner">
+	                							<div class="module-title"><h2 class="title">Note!</h2></div>
+						<div class="clear"></div>
+		                						<div class="module-content">
+		                	<p>This website is under construction.</p>						</div>
+					</div>
+					<div class="rt-module-bottom"><div class="rt-module-bottom2"><div class="rt-module-bottom3"></div></div></div>
+				</div>
+            </div>
+        	                    <div class="rt-block">
+				<div class="rt-module-surround">
+					<div class="rt-module-top"><div class="rt-module-top2"><div class="rt-module-top3"></div></div></div>
+					<div class="rt-module-inner">
+	                							<div class="module-content">
+		                	<div class="bannergroup">
+
+<div class="banneritem"><!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a href="http://www.addthis.com/bookmark.php?v=250&amp;username=xa-4d17c9023cfdabae" class="addthis_button_compact">Share</a>
+<span class="addthis_separator">|</span>
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4d17c9023cfdabae"></script>
+<!-- AddThis Button END --><div class="clr"></div>
+	</div>
+
+</div>						</div>
+					</div>
+					<div class="rt-module-bottom"><div class="rt-module-bottom2"><div class="rt-module-bottom3"></div></div></div>
+				</div>
+            </div>
+        	                    <div class="rt-block">
+				<div class="rt-module-surround">
+					<div class="rt-module-top"><div class="rt-module-top2"><div class="rt-module-top3"></div></div></div>
+					<div class="rt-module-inner">
+	                							<div class="module-title"><h2 class="title">Who's online</h2></div>
+						<div class="clear"></div>
+		                						<div class="module-content">
+		                	 We have&nbsp;3 guests&nbsp;online						</div>
+					</div>
+					<div class="rt-module-bottom"><div class="rt-module-bottom2"><div class="rt-module-bottom3"></div></div></div>
+				</div>
+            </div>
+        	
+                </div>
+            </div>
+
+                    <div class="clear"></div>
+                </div>
+            </div>
+																								<div id="rt-bottom"><div id="rt-bottom2">
+							<div class="rt-grid-3 rt-alpha rt-omega">
+    		<a href="#" id="gantry-totop"><span>Scroll To Top</span></a>
+		
+</div>
+							<div class="clear"></div>
+						</div></div>
+																		<div id="rt-footer">
+							<div class="rt-grid-3 rt-alpha">
+    		<div class="date-block">
+			<span class="date">Thursday, March 03, 2011</span>
+		</div>
+		
+</div>
+<div class="rt-grid-3 rt-prefix-6 rt-omega">
+    		<div class="clear"></div>
+		<span class="copytext">Designed by M2G!</span>
+		
+</div>
+							<div class="clear"></div>
+						</div>
+											</div>
+										<div id="rt-copyright">
+												<div class="clear"></div>
+					</div>
+					<div class="rt-footer-bottom-wrap"><div class="rt-footer-bottom"><div class="rt-footer-bottom2"><div class="rt-footer-bottom3"></div></div></div></div>
+									</div></div></div>
+				<div class="rt-surround-bottom"><div class="rt-surround-bottom2"><div class="rt-surround-bottom3"></div></div></div>
+							</div>
+		</div>
+			</body>
+</html>

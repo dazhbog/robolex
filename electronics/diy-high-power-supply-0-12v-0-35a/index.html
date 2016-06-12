@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+<head>
+  <base href="http://www.robolex.com/electronics/diy-high-power-supply-0-12v-0-35a" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="electronics, electronic, micromouse, touch, touchscreen, STM32, pic, pic18f,  Arm, microcontroller, tutorial, tutorials, robot, microchip, embedded, marios, hack, voice, recognition, somo14d, somo-14d, home, automation, system,resistor, capacitor, inductor, PC, lights, Egg Collecting, tank , tracks, PSU, current, voltage" />
+  <meta name="title" content="Power Supply" />
+  <meta name="author" content="Administrator" />
+  <meta name="description" content="Electronic tutorials and hacks!!" />
+  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management" />
+  <title>Power Supply</title>
+  <link href="/templates/rhuk_milkyway/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="/components/com_jcomments/tpl/default/style.css?v=12" type="text/css" />
+  <link rel="stylesheet" href="http://robolex.com/modules/mod_sp_simple_gallery/scripts/slimbox.css" type="text/css" />
+  <style type="text/css">
+    <!--
+img.sp_simple_gallery {border:1px solid #DDD; margin:0 5px 10px 5px; padding:5px; background:#000;}
+    -->
+  </style>
+  <script type="text/javascript" src="/components/com_jcomments/js/jcomments-v2.1.js?v=7"></script>
+  <script type="text/javascript" src="/components/com_jcomments/libraries/joomlatune/ajax.js?v=3"></script>
+  <script type="text/javascript" src="/media/system/js/mootools.js"></script>
+  <script type="text/javascript" src="/media/system/js/caption.js"></script>
+  <script type="text/javascript" src="http://robolex.com/modules/mod_sp_simple_gallery/scripts/slimbox_moo11.js"></script>
+
+
+<link rel="stylesheet" href="/templates/system/css/system.css" type="text/css" />
+<link rel="stylesheet" href="/templates/system/css/general.css" type="text/css" />
+<link rel="stylesheet" href="/templates/rhuk_milkyway/css/template.css" type="text/css" />
+<link rel="stylesheet" href="/templates/rhuk_milkyway/css/black.css" type="text/css" />
+<link rel="stylesheet" href="/templates/rhuk_milkyway/css/black_bg.css" type="text/css" />
+<!--[if lte IE 6]>
+<link href="/templates/rhuk_milkyway/css/ieonly.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!-- Start of Lazy Loading Images for Joomla -->
+					<script type='text/javascript' src='/plugins/system/lazyloadingimages/LazyLoad-yui-compressed.js'></script>
+				  <script type='text/javascript'>
+window.addEvent('domready',function() { 
+    var lazyloader = new LazyLoad({
+        range: 200,
+        image: '/plugins/system/lazyloadingimages/blank.gif',
+    });
+});
+</script>
+
+				  <!-- End of Lazy Loading Images for Joomla -->
+				  </head>
+<body id="page_bg" class="color_black bg_black width_fmax">
+<a name="up" id="up"></a>
+<div class="center" align="center">
+	<div id="wrapper">
+		<div id="wrapper_r">
+			<div id="header">
+				<div id="header_l">
+					<div id="header_r">
+						<div id="logo"></div>
+						
+					</div>
+				</div>
+			</div>
+
+			<div id="tabarea">
+				<div id="tabarea_l">
+					<div id="tabarea_r">
+						<div id="tabmenu">
+						<table cellpadding="0" cellspacing="0" class="pill">
+							<tr>
+								<td class="pill_l">&nbsp;</td>
+								<td class="pill_m">
+								<div id="pillmenu">
+									<table width="100%" border="0" cellpadding="0" cellspacing="1"><tr><td nowrap="nowrap"><a href="http://robolex.com/" class="mainlevel" >Home</a><a href="http://robolex.com/electronics" class="mainlevel" >Electronics</a><a href="http://robolex.com/electronics/tracked-robot/tankys-videos" class="mainlevel" >Tanky robot</a><a href="http://robolex.com/electronics/home-automation" class="mainlevel" >Home Automation</a><a href="http://robolex.com/electronics/micromouse/videos" class="mainlevel" >Micromouse</a><a href="http://robolex.com/sauce/fluid-robotics" class="mainlevel" >SAUC-E</a></td></tr></table>
+								</div>
+								</td>
+								<td class="pill_r">&nbsp;</td>
+							</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="search">
+				
+			</div>
+
+			<div id="pathway">
+				
+			</div>
+
+			<div class="clr"></div>
+
+			<div id="whitebox">
+				<div id="whitebox_t">
+					<div id="whitebox_tl">
+						<div id="whitebox_tr"></div>
+					</div>
+				</div>
+
+				<div id="whitebox_m">
+					<div id="area">
+									
+
+						<div id="leftcolumn">
+															<div class="module">
+			<div>
+				<div>
+					<div>
+											<ul class="menu"><li class="item1"><a href="http://robolex.com/"><span>Home</span></a></li><li class="parent item11"><a href="/general-hacks"><span>General hacks</span></a></li><li class="parent active item9"><a href="/electronics"><span>Electronics</span></a><ul><li class="parent item45"><a href="/electronics/tracked-robot"><span>Tracked Robot</span></a></li><li id="current" class="active item44"><a href="/electronics/diy-high-power-supply-0-12v-0-35a"><span>DIY High Power Supply 0-12V 0-35A</span></a></li><li class="parent item18"><a href="/electronics/home-automation"><span>Home Automation</span></a></li><li class="parent item14"><a href="/electronics/micromouse"><span>Micromouse</span></a></li><li class="item29"><a href="/electronics/egg-collecting-robot"><span>Egg Collecting Robot</span></a></li><li class="item30"><a href="/electronics/pc-controlled-lights"><span>PC Controlled Lights</span></a></li></ul></li><li class="parent item25"><a href="/sauce"><span>SAUC-E</span></a></li><li class="item12"><a href="/about-me"><span>About Me</span></a></li></ul>					</div>
+				</div>
+			</div>
+		</div>
+	
+												</div>
+
+												<div id="maincolumn">
+													
+							<table class="nopad">
+								<tr valign="top">
+									<td>
+										<table class="contentpaneopen">
+<tr>
+		<td class="contentheading" width="100%">
+					Power Supply			</td>
+				
+		
+					</tr>
+</table>
+
+<table class="contentpaneopen">
+
+
+
+<tr>
+<td valign="top">
+<p><strong>How to make a very simple power supply using an LM317 and a 2N3055(15A) or a 2N5686(50A).</strong></p>
+<p>I always wanted to make a power supply since its as important as a soldering iron(on a lab bench).</p>
+<p>Commersial solutions are too expensive for me. I can afford an 100euro supply(0-12, 0-3A maybe) but</p>
+<p>why not BUILD ONE that has 0-12V 0-20A(at least) at HALF the cost.</p>
+<p>The finished supply can go up to 30Amps at least.</p>
+<p>&nbsp;</p>
+<p><strong>The concept is SIMPLE!!</strong></p>
+<p><strong>Get a PC PSU!</strong></p>
+<ul>
+<li>They are cheap(some are shit though) [25-30 euro]</li>
+<li>Switching =&gt; light weight vs AMPS [we add some capacitors if the word "switching" makes u uncomfortable]</li>
+<li>Output all the typical voltages [3.3 , 5, 12]</li>
+<li>Have fuses and many other types of protection built-in</li>
+</ul>
+<p>&nbsp;</p>
+<p><strong>How to make a variable one!</strong></p>
+<p><strong>You need:</strong></p>
+<p>&gt;&gt; A <strong>PSU </strong>[Invest in a good brand one! not like me that I got an Alpine.]</p>
+<p>&nbsp;</p>
+<p>&gt;&gt; A<strong> power transistor</strong> [not a darlington] such as the very famous 2N3055(15A) or the 2N5686(50A)</p>
+<p>&nbsp;</p>
+<p>&gt;&gt; A<strong> heatsink</strong> for the transistor. There are ready ones drilled to the TO-3 package. Aim for the lowest Heat Resistance.</p>
+<p>&nbsp;</p>
+<p>&gt;&gt; A <strong>Low Dropout Regulator</strong>(LDO). The LM317 is alright. I would suggest going for a 3-5Amp ones!</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;I went for the LD1084V from ST. 1.3V dropout at 5A so its goood!&nbsp;</p>
+<p>&nbsp;</p>
+<p>&gt;&gt; Some Digital/Analog <strong>panel meters</strong>.</p>
+<p>&nbsp;</p>
+<p>&gt;&gt; <strong>A case</strong> maybe</p>
+<p>&nbsp;</p>
+<p>[optional] Add a microcontroller to do some neat things such as driving an LCD for everything,</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;rotary encoders instead of potentiometers, current cut-off, etc.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><div id="sp-sig58" class="sp-sig">
+	<a href="/images/images_power_supply/small640/IMG_3899.jpg" rel="lightbox-atomium" title="IMG_3899">
+		<img class="sp_simple_gallery" src="/images/images_power_supply/small640/thumbs/IMG_3899.jpg" alt="IMG_3899" />
+	</a>
+	<a href="/images/images_power_supply/small640/IMG_3900.jpg" rel="lightbox-atomium" title="IMG_3900">
+		<img class="sp_simple_gallery" src="/images/images_power_supply/small640/thumbs/IMG_3900.jpg" alt="IMG_3900" />
+	</a>
+	<a href="/images/images_power_supply/small640/IMG_3901.jpg" rel="lightbox-atomium" title="IMG_3901">
+		<img class="sp_simple_gallery" src="/images/images_power_supply/small640/thumbs/IMG_3901.jpg" alt="IMG_3901" />
+	</a>
+	<a href="/images/images_power_supply/small640/IMG_3902.jpg" rel="lightbox-atomium" title="IMG_3902">
+		<img class="sp_simple_gallery" src="/images/images_power_supply/small640/thumbs/IMG_3902.jpg" alt="IMG_3902" />
+	</a>
+	<a href="/images/images_power_supply/small640/IMG_3903.jpg" rel="lightbox-atomium" title="IMG_3903">
+		<img class="sp_simple_gallery" src="/images/images_power_supply/small640/thumbs/IMG_3903.jpg" alt="IMG_3903" />
+	</a>
+	<a href="/images/images_power_supply/small640/IMG_3913.jpg" rel="lightbox-atomium" title="IMG_3913">
+		<img class="sp_simple_gallery" src="/images/images_power_supply/small640/thumbs/IMG_3913.jpg" alt="IMG_3913" />
+	</a>
+	<a href="/images/images_power_supply/small640/IMG_3915.jpg" rel="lightbox-atomium" title="IMG_3915">
+		<img class="sp_simple_gallery" src="/images/images_power_supply/small640/thumbs/IMG_3915.jpg" alt="IMG_3915" />
+	</a>
+	<a href="/images/images_power_supply/small640/alpine_750w_120mm.jpg" rel="lightbox-atomium" title="alpine_750w_120mm">
+		<img class="sp_simple_gallery" src="/images/images_power_supply/small640/thumbs/alpine_750w_120mm.jpg" alt="alpine_750w_120mm" />
+	</a>
+	<a href="/images/images_power_supply/small640/power_sch.jpg" rel="lightbox-atomium" title="power_sch">
+		<img class="sp_simple_gallery" src="/images/images_power_supply/small640/thumbs/power_sch.jpg" alt="power_sch" />
+	</a>
+</div>
+<script type="text/javascript">
+	window.addEvent("domready",function(){
+		$$('div#sp-sig58 img').each(function(e){
+		  var fade = new Fx.Style(e, 'opacity', {wait:false});
+		  fade.set(0.5);
+		  e.addEvent('mouseover', function(){
+			fade.start(1);
+		  });
+		  e.addEvent('mouseout', function(){
+			fade.start(0.5);
+		  });
+		});
+	});
+</script>
+</p>
+<p>&nbsp;</p>
+<p><strong>Tips:</strong></p>
+<p>&gt;&gt; For the PSU to turn on. The EN wire must be connected to GND.</p>
+<p>&nbsp;</p>
+<p>&gt;&gt; Be careful so that the case of the PSU is not touching any part of your circuit, even ground.</p>
+<p>&nbsp;</p>
+<p>&gt;&gt; Why do we use the configuration on the LEFT instead of the one in the right?</p>
+<p><img src="/images/images_misc/pot.png" width="469" height="238" alt="pot" /></p>
+<p>In the event of dust going in the potentiometer(or if we overscrew in on the case) the "needle" might not touch the carbon resistive trace.</p>
+<p>This makes PIN 2 to disconnect.</p>
+<p>If we use the RIGHT configuration this will cause our circuit to have very high resistance[open circuit] and this will probably cause the regulator to output maximum voltage.</p>
+<p>If we use the LEFT configuration the part's resistance will still be within limits we KNEW when designing the circuit!</p>
+<p>&nbsp;</p>
+<p>&gt;&gt; If in doubt, put more capacitors.</p>
+<p>&nbsp;</p>
+<p>&gt;&gt; What if the supply shuts down?</p>
+<p>Typical PSUs have Over voltage/current and under voltage protection.&nbsp;</p>
+<p><strong>Over current/Under voltage</strong></p>
+<p>If we try to draw 10Amps in bursts, the temporary voltage drop might trigger the under voltage protection mechanism.</p>
+<p>Since I had problems like this, I added some capacitors to the output and that fixed the issues I had,</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p></td>
+</tr>
+
+</table>
+<span class="article_separator">&nbsp;</span>
+<script type="text/javascript">
+<!--
+var jcomments=new JComments(25, 'com_content','/index.php?option=com_jcomments&amp;tmpl=component');
+jcomments.setList('comments-list');
+//-->
+</script>
+<div id="jc">
+<div id="comments"></div>
+<h4>Add comment</h4>
+<a id="addcomments" href="#addcomments"></a>
+<form id="comments-form" name="comments-form" action="javascript:void(null);">
+<p>
+	<input id="comments-form-name" type="text" name="name" value="" maxlength="20" size="22" tabindex="1" />
+	<label for="comments-form-name">Name (required)</label>
+</p>
+<p>
+	<input id="comments-form-email" type="text" name="email" value="" size="22" tabindex="2" />
+	<label for="comments-form-email">E-mail (required, but will not display)</label>
+</p>
+<p>
+	<input id="comments-form-homepage" type="text" name="homepage" value="" size="22" tabindex="3" />
+	<label for="comments-form-homepage">Website</label>
+</p>
+<p>
+	<textarea id="comments-form-comment" name="comment" cols="65" rows="8" tabindex="5"></textarea>
+</p>
+<p>
+	<input class="checkbox" id="comments-form-subscribe" type="checkbox" name="subscribe" value="1" tabindex="5" />
+	<label for="comments-form-subscribe">Notify me of follow-up comments</label><br />
+</p>
+<p>
+	<img class="captcha" onclick="jcomments.clear('captcha');" id="comments-form-captcha-image" name="captcha-image" src="/index.php?option=com_jcomments&amp;task=captcha&amp;tmpl=component&amp;ac=32336" width="121" height="60" alt="Security code" /><br />
+	<span class="captcha" onclick="jcomments.clear('captcha');">Refresh</span><br />
+	<input class="captcha" id="comments-form-captcha" type="text" name="captcha-refid" value="" size="5" tabindex="6" /><br />
+</p>
+<div id="comments-form-buttons">
+	<div class="btn" id="comments-form-send"><div><a href="#" tabindex="7" onclick="jcomments.saveComment();return false;" title="Send (Ctrl+Enter)">Send</a></div></div>
+	<div class="btn" id="comments-form-cancel" style="display:none;"><div><a href="#" tabindex="8" onclick="return false;" title="Cancel">Cancel</a></div></div>
+	<div style="clear:both;"></div>
+</div>
+	<input type="hidden" name="object_id" value="25" />
+	<input type="hidden" name="object_group" value="com_content" />
+</form>
+<script type="text/javascript">
+<!--
+function JCommentsInitializeForm()
+{
+	var jcEditor = new JCommentsEditor('comments-form-comment', true);
+	jcEditor.addCounter(1000, '', ' symbols left', 'counter');
+	jcomments.setForm(new JCommentsForm('comments-form', jcEditor));
+}
+
+if (window.addEventListener) {window.addEventListener('load',JCommentsInitializeForm,false);}
+else if (document.addEventListener){document.addEventListener('load',JCommentsInitializeForm,false);}
+else if (window.attachEvent){window.attachEvent('onload',JCommentsInitializeForm);}
+else {if (typeof window.onload=='function'){var oldload=window.onload;window.onload=function(){oldload();JCommentsInitializeForm();}} else window.onload=JCommentsInitializeForm;} 
+//-->
+</script>
+<div id="comments-footer" align="center"><a href="http://www.joomlatune.com" title="JComments" target="_blank">JComments</a></div>
+</div>
+										
+									</td>
+																	</tr>
+							</table>
+
+						</div>
+						<div class="clr"></div>
+					</div>
+					<div class="clr"></div>
+				</div>
+
+				<div id="whitebox_b">
+					<div id="whitebox_bl">
+						<div id="whitebox_br"></div>
+					</div>
+				</div>
+			</div>
+
+			<div id="footerspacer"></div>
+		</div>
+
+		<div id="footer">
+			<div id="footer_l">
+				<div id="footer_r">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-nd/3.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License</a>
+					<p id="syndicate">
+						
+					</p>
+					<p id="power_by">
+	 				 	Powered by <a href="http://www.robolex.com/about-me">MG2L!</a>.
+						valid <a href="http://validator.w3.org/check/referer">XHTML</a> and <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

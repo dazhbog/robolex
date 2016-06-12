@@ -1,0 +1,398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" >
+<head>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-20430746-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+  <base href="http://www.robolex.com/tracked-robot/robot-hardware" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="electronics, electronic, micromouse, touch, touchscreen, STM32, pic, pic18f,  Arm, microcontroller, tutorial, tutorials, robot, microchip, embedded, marios georgiou, hack, voice, recognition, somo14d, somo-14d, home, automation, system,resistor, capacitor, inductor, PC, lights, Egg Collecting, tank , tracks, PSU, current, voltage, tanky, tanky robot, tread, treads, tracked, laser, diode, coherent, 808nm,cortex" />
+  <meta name="title" content="Tracked Mobile Robot - Hardware" />
+  <meta name="author" content="Administrator" />
+  <meta name="description" content="Electronic stuff!!" />
+  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management" />
+  <title>Tracked Mobile Robot - Hardware</title>
+  <link href="/templates/rhuk_milkyway/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="http://robolex.com/modules/mod_sp_simple_gallery/scripts/slimbox.css" type="text/css" />
+  <style type="text/css">
+    <!--
+img.sp_simple_gallery {border:1px solid #DDD; margin:0 5px 10px 5px; padding:5px; background:#000;}img.sp_simple_gallery {border:1px solid #DDD; margin:0 5px 10px 5px; padding:5px; background:#000;}img.sp_simple_gallery {border:1px solid #DDD; margin:0 5px 10px 5px; padding:5px; background:#000;}img.sp_simple_gallery {border:1px solid #DDD; margin:0 5px 10px 5px; padding:5px; background:#000;}
+    -->
+  </style>
+  <script type="text/javascript" src="/media/system/js/mootools.js"></script>
+  <script type="text/javascript" src="/media/system/js/caption.js"></script>
+  <script type="text/javascript" src="http://robolex.com/modules/mod_sp_simple_gallery/scripts/slimbox_moo11.js"></script>
+
+<link rel="stylesheet" href="/templates/system/css/system.css" type="text/css" />
+<link rel="stylesheet" href="/templates/system/css/general.css" type="text/css" />
+<link rel="stylesheet" href="/templates/rhuk_milkyway/css/template.css" type="text/css" />
+<link rel="stylesheet" href="/templates/rhuk_milkyway/css/black.css" type="text/css" />
+<link rel="stylesheet" href="/templates/rhuk_milkyway/css/black_bg.css" type="text/css" />
+<!--[if lte IE 6]>
+<link href="/templates/rhuk_milkyway/css/ieonly.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!-- Start of Lazy Loading Images for Joomla -->
+					<script type='text/javascript' src='/plugins/system/lazyloadingimages/LazyLoad-yui-compressed.js'></script>
+				  <script type='text/javascript'>
+window.addEvent('domready',function() { 
+    var lazyloader = new LazyLoad({
+        range: 200,
+        image: '/plugins/system/lazyloadingimages/blank.gif',
+    });
+});
+</script>
+
+				  <!-- End of Lazy Loading Images for Joomla -->
+				  </head>
+<body id="page_bg" class="color_black bg_black width_fmax">
+<a name="up" id="up"></a>
+<div class="center" align="center">
+	<div id="wrapper">
+		<div id="wrapper_r">
+			<div id="header">
+				<div id="header_l">
+					<div id="header_r">
+						<div id="logo"></div>
+						
+					</div>
+				</div>
+			</div>
+
+			<div id="tabarea">
+				<div id="tabarea_l">
+					<div id="tabarea_r">
+						<div id="tabmenu">
+						<table cellpadding="0" cellspacing="0" class="pill">
+							<tr>
+								<td class="pill_l">&nbsp;</td>
+								<td class="pill_m">
+								<div id="pillmenu">
+									<table width="100%" border="0" cellpadding="0" cellspacing="1"><tr><td nowrap="nowrap"><a href="http://robolex.com/" class="mainlevel" >Home</a><a href="http://robolex.com/high-power-laser-diode" class="mainlevel" >35W Laser Diode</a><a href="http://robolex.com/tracked-robot/introduction" class="mainlevel" >Tanky robot</a><a href="http://robolex.com/rcsystem" class="mainlevel" >Radio control game</a><a href="http://robolex.com/micromouse/micromouse-intro" class="mainlevel" >Micromouse robot</a><a href="http://robolex.com/sauce/sauce-introduction" class="mainlevel" >SAUC-E [AUV]</a></td></tr></table>
+								</div>
+								</td>
+								<td class="pill_r">&nbsp;</td>
+							</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="search">
+				
+			</div>
+
+			<div id="pathway">
+				
+			</div>
+
+			<div class="clr"></div>
+
+			<div id="whitebox">
+				<div id="whitebox_t">
+					<div id="whitebox_tl">
+						<div id="whitebox_tr"></div>
+					</div>
+				</div>
+
+				<div id="whitebox_m">
+					<div id="area">
+									
+
+						<div id="leftcolumn">
+															<div class="module">
+			<div>
+				<div>
+					<div>
+											<ul class="menu"><li class="item1"><a href="http://robolex.com/"><span>Home</span></a></li><li class="item53"><a href="/projects-hub"><span>Projects Hub</span></a></li><li class="parent active item45"><a href="http://robolex.com/tracked-robot/introduction"><span>Tracked Mobile Robot</span></a><ul><li class="item48"><a href="/tracked-robot/introduction"><span>Introduction</span></a></li><li class="item47"><a href="/tracked-robot/robot-software"><span>Robot Software</span></a></li><li id="current" class="active item52"><a href="/tracked-robot/robot-hardware"><span>Robot Hardware</span></a></li><li class="item34"><a href="/tracked-robot/tankys-videos"><span>Tanky's videos</span></a></li></ul></li><li class="item49"><a href="/high-power-laser-diode"><span>High Power Laser Diode</span></a></li><li class="item51"><a href="/rcsystem"><span>Radio Control System</span></a></li><li class="item44"><a href="/diy-high-power-supply-0-12v-0-35a"><span>DIY Power Supply 35A</span></a></li><li class="parent item18"><a href="http://robolex.com/home-automation/introduction"><span>Home Automation</span></a></li><li class="parent item25"><a href="http://robolex.com/sauce/sauce-introduction"><span>SAUC-E AUV</span></a></li><li class="parent item14"><a href="http://robolex.com/micromouse/micromouse-intro"><span>Micromouse Robot</span></a></li><li class="item29"><a href="/egg-collecting-robot"><span>Egg Collecting Robot</span></a></li><li class="item30"><a href="/pc-controlled-lights"><span>PC Controlled Lights</span></a></li><li class="item12"><a href="/about-me"><span>About Me</span></a></li></ul>					</div>
+				</div>
+			</div>
+		</div>
+	
+												</div>
+
+												<div id="maincolumn">
+													
+							<table class="nopad">
+								<tr valign="top">
+									<td>
+										<table class="contentpaneopen">
+<tr>
+		<td class="contentheading" width="100%">
+					Tracked Mobile Robot - Hardware			</td>
+				
+		
+					</tr>
+</table>
+
+<table class="contentpaneopen">
+
+
+
+<tr>
+<td valign="top">
+<p>&nbsp;</p>
+<p><b>Final design version</b></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><div id="sp-sig57" class="sp-sig">
+	<a href="/images/images_tracked_robot/tanky4/a.jpg" rel="lightbox-atomium" title="a">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky4/thumbs/a.jpg" alt="a" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky4/b.jpg" rel="lightbox-atomium" title="b">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky4/thumbs/b.jpg" alt="b" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky4/image078.jpg" rel="lightbox-atomium" title="image078">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky4/thumbs/image078.jpg" alt="image078" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky4/image083.jpg" rel="lightbox-atomium" title="image083">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky4/thumbs/image083.jpg" alt="image083" />
+	</a>
+</div>
+<script type="text/javascript">
+	window.addEvent("domready",function(){
+		$$('div#sp-sig57 img').each(function(e){
+		  var fade = new Fx.Style(e, 'opacity', {wait:false});
+		  fade.set(0.5);
+		  e.addEvent('mouseover', function(){
+			fade.start(1);
+		  });
+		  e.addEvent('mouseout', function(){
+			fade.start(0.5);
+		  });
+		});
+	});
+</script>
+</p>
+<p>&nbsp;</p>
+<p><strong>Robot frame</strong></p>
+<p>The robot frame design was based on materials that were readily available on DIY shops. The main hull construction was made with flat metal joint brackets like the one shown below. The benefit of these is the multiple holes that allow adjustments to be made on the fly. Flat jointers along with angled brackets form the rectangle shape of the hull that is strong enough to support the motors, tracks and electronics. The frame size is 28x47cm while the complete robot footprint is 40x47cm. The robot has two layers built on top of each other. The bottom layer accommodates the motors, electronics and batteries while the second holds the laptop. The camera is attached on its own raised support bracket.</p>
+<p style="text-align: center;"><img src="/images/images_tracked_robot/thesis/image071.jpg" width="450" height="97" alt="image071" style="display: block; margin-left: auto; margin-right: auto;" />Figure 38 Flat metal brackets often found in DIY stores</p>
+<p><strong>Motors</strong></p>
+<p>The motors used for the robot were extracted from cheap cordless drills. The benefit was that these motors have adequate torque, come with a stock gearbox and a clutch. The motor can draw up 15A when starting up and settle at around 3A under normal loads. High current surges are usually associated with sparks from the motor’s commutators that in turn create a lot of parasitics in the circuit. As a precaution three ceramic capacitors were added to each motor to suppress any high frequency noise.</p>
+<p style="text-align: center;"><img src="/images/images_tracked_robot/thesis/image072.jpg" width="300" height="225" alt="image072" />&nbsp;<img src="/images/images_tracked_robot/thesis/image073.jpg" width="300" height="225" alt="image073" /><br />Figure 39 On the left is the drill motor and on the right, the installed ceramic capacitors</p>
+<p><strong>Laptop support</strong><br />To achieve complete autonomy the robot has to be able to carry, along with its own electronics, the processing unit. Since the laptop size fits the robot’s frame, a raised slot was created to host it.&nbsp;The robot electronics were placed on a bottom layer along with the battery and motors while the laptop was placed on top of the raised platform, on the four white pads shown below.</p>
+<p style="text-align: center;"><img src="/images/images_tracked_robot/thesis/image074.jpg" width="300" height="224" alt="image074" style="display: block; margin-left: auto; margin-right: auto;" /><br />Figure 40 Robot raised platform for the laptop, made from multiple parallel 10mm PVC pipes and rubber pads to absorb vibration</p>
+<p><br /><strong>Hardware – Tracks and suspension</strong></p>
+<p>Since the first version of the robot design, the parts that underwent the most design iterations were the tracks and the suspension. These two parts define the whole locomotion properties of the robot. Slippage, current draw, vibrations, etc. are heavily dependent on the track pads and tension of the track. Below are the three types of suspensions that were built for the robot. <br />The first one is a CAD representation of what is shown in figure 42 on the left. This was the first attempt to equip the robot with a suspension. This implementation, although operational, was not optimal. It had problems such as difficulty dealing with forces applied to the wheel at various angles other than vertically. Another issue was the narrow error margin of the placement of the bearings making it difficult to duplicate the same design and behaviour across each robot wheel.<br />The second design was of an angled short arm carrying the wheel and 90 degrees away, a coil spring was placed to push the wheel down. The spring used was an oil piston spring that was perfect for absorbing most vibrations. This design was adequate for the task. The only minor issue was that the tension of the spring could not be adjusted more than a few Newton per meter.<br />The last type of suspension came with the track pad change (Figure 43) from PVC pipes to Lexan polycarbonate pieces. This last suspension design had the added benefit of adjustable tension of the leaf spring. The leaf spring itself (specifically quarter-elliptic) is an old concept used in mainly trucks where steel leafs – flat plates are stacked to achieve the desired N/m.</p>
+<p style="text-align: center;"><br /> <img src="/images/images_tracked_robot/thesis/image076.png" width="161" height="200" alt="image076" /><img src="/images/images_tracked_robot/thesis/image077.jpg" width="209" height="200" alt="image077" /><img src="/images/images_tracked_robot/thesis/image078.png" width="356" height="200" alt="image078" /></p>
+<p style="text-align: center;">Figure 41 Left: First version, vertical linear suspension. Middle: Second version, hinge type with a coil spring pushing down. Right: Final version, flat carbon steel pieces combined to form a leaf spring</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="/images/images_tracked_robot/thesis/image079.png" width="255" height="150" alt="image079" /><img src="/images/images_tracked_robot/thesis/image080.jpg" width="437" height="150" alt="image080" /></p>
+<p style="text-align: center;">Figure 42 First robot version with the narrow blue wheels and vertical springs allowing linear motion of each wheel, Right: second suspension type with oil piston coil springs and angled brackets for each wheel</p>
+<p style="text-align: center;">&nbsp;</p>
+<p>The track pads replacement, from PVC to Lexan was the second part of the design changes towards less vibration. The motivation to perform any changes to the robot at a mature stage was the effort to achieve less vibration and subsequently improve algorithm performance. Nodes that were dependant on camera movement did benefit from this change. The issue with the previous PVC pipe track pads was that even if the robot was moving on a completely even surface the curved surface of the PVC pipes resulted in unnecessary vibrations.<br />In Figure 43 the concept is illustrated.</p>
+<p style="text-align: center;"><br /> <img src="/images/images_tracked_robot/thesis/image081.png" width="600" height="375" alt="image081" style="display: block; margin-left: auto; margin-right: auto;" /><br />Figure 43 Illustrating how the second design suffers less from vibrations due to flat pads.</p>
+<p style="text-align: center;">The first design was dropped due to the PVC pipe curves creating unecessary vibration.</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><img src="/images/images_tracked_robot/thesis/image082.jpg" width="267" height="200" alt="image082" />&nbsp; &nbsp; &nbsp;&nbsp;<img src="/images/images_tracked_robot/thesis/image083.jpg" width="267" height="200" alt="image083" /></p>
+<p style="text-align: center;">Figure 44 Close up of the two different track versions. Left: Old prototype, Right: Version used for the project</p>
+<p style="text-align: center;">Notable differences: 1. Switch from curved pads to flat pads. 2. Motion transfer from tension to a geared pulley</p>
+<p>&nbsp;</p>
+<p>&nbsp;<strong style="font-size: 16px;"><strong style="font-size: 19px;">Electronics</strong></strong></p>
+<p><br /><strong>On-board circuit</strong><br />The robot’s circuit was designed to allow the robot to run in different modes, depending on the occasion. Every mode of operation can be selected using the on-board buttons on the PCB or by requesting the mode using the USB to serial connection. When the robot is headless, without the laptop, it can be driven using the R/C receiver. If the laptop is connected, it can change the mode to take control and drive the robot. The microcontroller also packs some security features such as emergency stop if the connection is dropped or if the current draw is above a threshold.</p>
+<p>&nbsp;</p>
+<p>The circuit consists of an ATmega328 microcontroller that is directly connected to two VNH2SP30 motor H-bridges. Most of the I/O pins are used for direction control of each motor, current sense, PWM, etc. The serial port of the microcontroller is connected to a PL3230 integrated circuit that is used as a bridge to the laptop. Accommodating circuitry is also present to provide a stable power supply and audio-visual debugging elements.</p>
+<p>&nbsp;</p>
+<p><img src="/images/images_tracked_robot/thesis/image084.jpg" width="730" height="548" alt="image084" style="display: block; margin-left: auto; margin-right: auto;" /><br />The robot electronics consist of:<br />• USB to Serial, based on the PL3230 IC<br />• 1 breakout board of 2 x 30A motor drivers from Texas Instruments VNH2SP30<br />• Connections to the motors<br />• ATMEGA328 microcontroller<br />• R/C receiver connected to the counter/decoder of the microcontroller<br />• Battery connections<br />• Power regulators<br />• Indicator LEDs</p>
+<p>The robot electronics are placed on a custom printed circuit board and use a USB to serial connection (1), to connect the microcontroller to the on-board computer.</p>
+<p style="text-align: center;"><img src="/images/images_tracked_robot/thesis/image085.png" width="378" height="250" alt="image085" /><img src="/images/images_tracked_robot/thesis/image086.png" width="270" height="250" alt="image086" /></p>
+<p style="text-align: center;">Figure 45 Schematic and board layout of the robot's PCB</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: left;"><strong>Motor drivers</strong></p>
+<p style="text-align: center;"><img src="/images/images_tracked_robot/thesis/image087.jpg" width="300" height="203" alt="image087" style="display: block; margin-left: auto; margin-right: auto;" /><br />Figure 46 The two VNH H-bridges on their breakout board. The two small mosfets shown were removed. Extra capacitors were also added.</p>
+<p style="text-align: center;">&nbsp;</p>
+<p>The selection of the motor driver was purely guided by power requirements of the motors.&nbsp;<br />The driver features current sense pins that allow two ADC channels to be connected providing 0.13 Volts per Ampere. This is easily read by a 10bit ADC and allows us to monitor the current draw to prevent any breakdowns in case of a motor stall. In addition, the driver itself provides a maximum current shutdown that is enabled when the current goes up in a specific dt. Each channel of the driver needs five I/O pins connected to it. Two pins are needed for direction (xIna, xINb), one for PWM, one for current sense (xCS) and one for the enable pin (xEN).</p>
+<p>&nbsp;</p>
+<p><strong>Batteries</strong><br />Due to the high burst currents induced by the two motors a battery technology that is capable to withstand high surges up to 40A had to be selected. A 5000ma/h Lithium-Polymer battery was selected for the task.<br />The initial battery had three cells outputting 11.1V nominal. However one of the cells was punctured during testing and was removed, resulting in a two cell battery at 7.4V. The robot electronics were designed to operate at voltages as low as 5.5 volts (including regulator dropout) and therefore the only thing affected was the top speed of the robot.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong><br class="Apple-interchange-newline" /><br /></strong></p>
+<p><strong>Final version</strong></p>
+<p><div id="sp-sig56" class="sp-sig">
+	<a href="/images/images_tracked_robot/tanky3/a.jpg" rel="lightbox-atomium" title="a">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky3/thumbs/a.jpg" alt="a" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky3/b.jpg" rel="lightbox-atomium" title="b">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky3/thumbs/b.jpg" alt="b" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky3/ele.jpg" rel="lightbox-atomium" title="ele">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky3/thumbs/ele.jpg" alt="ele" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky3/image074.jpg" rel="lightbox-atomium" title="image074">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky3/thumbs/image074.jpg" alt="image074" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky3/image075.jpg" rel="lightbox-atomium" title="image075">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky3/thumbs/image075.jpg" alt="image075" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky3/image078.jpg" rel="lightbox-atomium" title="image078">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky3/thumbs/image078.jpg" alt="image078" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky3/image083.jpg" rel="lightbox-atomium" title="image083">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky3/thumbs/image083.jpg" alt="image083" />
+	</a>
+</div>
+<script type="text/javascript">
+	window.addEvent("domready",function(){
+		$$('div#sp-sig56 img').each(function(e){
+		  var fade = new Fx.Style(e, 'opacity', {wait:false});
+		  fade.set(0.5);
+		  e.addEvent('mouseover', function(){
+			fade.start(1);
+		  });
+		  e.addEvent('mouseout', function(){
+			fade.start(0.5);
+		  });
+		});
+	});
+</script>
+</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><b>Old prototype</b></p>
+<p><div id="sp-sig54" class="sp-sig">
+	<a href="/images/images_tracked_robot/tanky1/IMG_3799.jpg" rel="lightbox-atomium" title="IMG_3799">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky1/thumbs/IMG_3799.jpg" alt="IMG_3799" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky1/IMG_3800.jpg" rel="lightbox-atomium" title="IMG_3800">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky1/thumbs/IMG_3800.jpg" alt="IMG_3800" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky1/IMG_3803.jpg" rel="lightbox-atomium" title="IMG_3803">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky1/thumbs/IMG_3803.jpg" alt="IMG_3803" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky1/IMG_3804.jpg" rel="lightbox-atomium" title="IMG_3804">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky1/thumbs/IMG_3804.jpg" alt="IMG_3804" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky1/IMG_3805.jpg" rel="lightbox-atomium" title="IMG_3805">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky1/thumbs/IMG_3805.jpg" alt="IMG_3805" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky1/IMG_3810.jpg" rel="lightbox-atomium" title="IMG_3810">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky1/thumbs/IMG_3810.jpg" alt="IMG_3810" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky1/IMG_3811.jpg" rel="lightbox-atomium" title="IMG_3811">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky1/thumbs/IMG_3811.jpg" alt="IMG_3811" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky1/chock.jpg" rel="lightbox-atomium" title="chock">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky1/thumbs/chock.jpg" alt="chock" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky1/linear_suspension.jpg" rel="lightbox-atomium" title="linear_suspension">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky1/thumbs/linear_suspension.jpg" alt="linear_suspension" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky1/track_padsF1.jpg" rel="lightbox-atomium" title="track_padsF1">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky1/thumbs/track_padsF1.jpg" alt="track_padsF1" />
+	</a>
+</div>
+<script type="text/javascript">
+	window.addEvent("domready",function(){
+		$$('div#sp-sig54 img').each(function(e){
+		  var fade = new Fx.Style(e, 'opacity', {wait:false});
+		  fade.set(0.5);
+		  e.addEvent('mouseover', function(){
+			fade.start(1);
+		  });
+		  e.addEvent('mouseout', function(){
+			fade.start(0.5);
+		  });
+		});
+	});
+</script>
+</p>
+<p><div id="sp-sig55" class="sp-sig">
+	<a href="/images/images_tracked_robot/tanky2/IMG_3876.jpg" rel="lightbox-atomium" title="IMG_3876">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky2/thumbs/IMG_3876.jpg" alt="IMG_3876" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky2/IMG_3880.jpg" rel="lightbox-atomium" title="IMG_3880">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky2/thumbs/IMG_3880.jpg" alt="IMG_3880" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky2/IMG_3883.jpg" rel="lightbox-atomium" title="IMG_3883">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky2/thumbs/IMG_3883.jpg" alt="IMG_3883" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky2/IMG_3886.jpg" rel="lightbox-atomium" title="IMG_3886">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky2/thumbs/IMG_3886.jpg" alt="IMG_3886" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky2/IMG_3887.jpg" rel="lightbox-atomium" title="IMG_3887">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky2/thumbs/IMG_3887.jpg" alt="IMG_3887" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky2/IMG_3888.jpg" rel="lightbox-atomium" title="IMG_3888">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky2/thumbs/IMG_3888.jpg" alt="IMG_3888" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky2/IMG_3889.jpg" rel="lightbox-atomium" title="IMG_3889">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky2/thumbs/IMG_3889.jpg" alt="IMG_3889" />
+	</a>
+	<a href="/images/images_tracked_robot/tanky2/IMG_3890.jpg" rel="lightbox-atomium" title="IMG_3890">
+		<img class="sp_simple_gallery" src="/images/images_tracked_robot/tanky2/thumbs/IMG_3890.jpg" alt="IMG_3890" />
+	</a>
+</div>
+<script type="text/javascript">
+	window.addEvent("domready",function(){
+		$$('div#sp-sig55 img').each(function(e){
+		  var fade = new Fx.Style(e, 'opacity', {wait:false});
+		  fade.set(0.5);
+		  e.addEvent('mouseover', function(){
+			fade.start(1);
+		  });
+		  e.addEvent('mouseout', function(){
+			fade.start(0.5);
+		  });
+		});
+	});
+</script>
+</p>
+<p>&nbsp;</p></td>
+</tr>
+
+</table>
+<span class="article_separator">&nbsp;</span>
+
+										
+									</td>
+																	</tr>
+							</table>
+
+						</div>
+						<div class="clr"></div>
+					</div>
+					<div class="clr"></div>
+				</div>
+
+				<div id="whitebox_b">
+					<div id="whitebox_bl">
+						<div id="whitebox_br"></div>
+					</div>
+				</div>
+			</div>
+
+			<div id="footerspacer"></div>
+		</div>
+
+		<div id="footer">
+			<div id="footer_l">
+				<div id="footer_r">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>
+					<p id="syndicate">
+						
+					</p>
+					<p id="power_by">
+	 				 	Powered by <a href="http://www.robolex.com/about-me">MG2L!</a>.
+						valid <a href="http://validator.w3.org/check/referer">XHTML</a> and <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a>.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

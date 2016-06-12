@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Home</title>
+		<description>Electronic stuff!!</description>
+		<link>http://robolex.com/component/content/frontpage</link>
+		<lastBuildDate>Mon, 28 Sep 2015 17:47:17 +0000</lastBuildDate>
+		<generator>Joomla! 1.5 - Open Source Content Management</generator>
+		<language>en-gb</language>
+		<item>
+			<title>Front Main Page</title>
+			<link>http://robolex.com/component/content/article/8-main</link>
+			<guid>http://robolex.com/component/content/article/8-main</guid>
+			<description><![CDATA[<p>&nbsp;</p>
+<p style="text-align: center;"><strong><span style="color: #ff0000;">For an easy way to browse through the projects click on the "Projects Hub" in the left menu or scroll down.</span></strong></p>
+<p>&nbsp;</p>
+<p>&nbsp;<strong style="font-size: 24pt;"><span style="font-family: 'courier new', courier;">Blog</span></strong></p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><span style="font-family: arial, helvetica, sans-serif; line-height: 15.6000003814697px; text-align: center;">&nbsp;<b style="font-family: arial, helvetica, sans-serif; line-height: 15.6000003814697px; text-align: center; font-size: 14pt;"><strong>------------------------------------------</strong><b>17/12/2014</b><strong>------------------------------------------</strong></b></span></p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><span style="font-family: 'courier new', courier; line-height: 15.6000003814697px; font-size: 12pt;">Agriculture project</span></p>
+<p style="text-align: center;"><a href="http://pycno.co.uk">PYCNO LINK</a></p>
+<p style="text-align: center;"><a href="http://pycno.co.uk"></a>&nbsp;</p>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><b style="font-family: arial, helvetica, sans-serif; line-height: 15.6000003814697px; text-align: center; font-size: 14pt;"><strong><span style="font-family: arial, helvetica, sans-serif; line-height: 15.6000003814697px; text-align: center;">&nbsp;<b style="font-family: arial, helvetica, sans-serif; line-height: 15.6000003814697px; text-align: center; font-size: 14pt;"><strong>------------------------------------------</strong><b>18/12/2012</b><strong>------------------------------------------</strong></b></span></strong></b></p>
+<p>&nbsp;</p>
+<p><span face="courier new, courier" style="font-size: 12pt; font-family: 'courier new', courier;">Currently working on a high voltage project involving xenon flash tubes. I am working towards a circuit that will use series triggering to ionise the xenon gas and a capacitor bank to dump the energy for the flash.</span></p>
+<p>&nbsp;&nbsp;</p>
+<p style="text-align: center;">&nbsp;<b style="font-size: 14pt; text-align: center;"><strong>------------------------------------------</strong><b>19/10/2012</b><strong>------------------------------------------</strong></b></p>
+<p><span style="font-size: 10pt;">The robot "Tanky" was featured on Hackaday (the prototype version)!Thanks to Mike for the article.&nbsp;</span></p>
+<p><a hrefundefined="" data-mce-onclick="window.open(this.href,'a','scrollbars=yes,resizable=yes,location=yes,menubar=yes,status=yes,toolbar=yes,width=100,height=100,left='+(screen.availWidth/2-50)+',top='+(screen.availHeight/2-50)+'');return false;" data-mce-hrefundefined="" style="text-decoration: underline; color: #ffffff; background-color: #e8e8e8; font-size: 12pt;"></a><a href="http://hackaday.com/2012/10/17/tank-tread-robot-build-aims-for-a-smooth-ride/" onclick="window.open(this.href,'hackaday1','scrollbars=yes,resizable=yes,location=yes,menubar=yes,status=yes,toolbar=yes,width=100,height=100,left='+(screen.availWidth/2-50)+',top='+(screen.availHeight/2-50)+'');return false;" data-mce-onclick="">http://hackaday.com/2012/10/17/tank-tread-robot-build-aims-for-a-smooth-ride/</a></p>
+<p><span style="font-size: 10pt; text-decoration: underline;">Also featured in:</span></p>
+<div><span style="font-size: 10pt;">
+<div><a href="http://robots.wonderhowto.com/how-to/meet-tanky-super-smart-diy-tank-robot-can-map-its-own-surroundings-0139848/" style="font-size: 10pt;" onclick="window.open(this.href,'rht','scrollbars=yes,resizable=yes,location=yes,menubar=yes,status=yes,toolbar=yes,width=100,height=100,left='+(screen.availWidth/2-50)+',top='+(screen.availHeight/2-50)+'');return false;" data-mce-onclick="">http://robots.wonderhowto.com/how-to/meet-tanky-super-smart-diy-tank-robot-can-map-its-own-surroundings-0139848/</a></div>
+</span></div>
+<div><span style="font-size: 10pt;"> <a hrefundefined=""></a><a href="http://www.dfrobot.com/community/2012/10/tankya-tracked-mobile-robot/" onclick="window.open(this.href,'df','scrollbars=yes,resizable=yes,location=yes,menubar=yes,status=yes,toolbar=yes,width=100,height=100,left='+(screen.availWidth/2-50)+',top='+(screen.availHeight/2-50)+'');return false;" data-mce-onclick="">http://www.dfrobot.com/community/2012/10/tankya-tracked-mobile-robot/</a></span></div>
+<div><span style="font-size: 10pt;"><a href="http://www.dfrobot.com/community/2012/10/tankya-tracked-mobile-robot/"></a><a href="http://24gadget.ru/1161052613-samodelnyy-mini-tank-iz-dostupnyh-materialov-video.html" onclick="window.open(this.href,'v','scrollbars=yes,resizable=yes,location=yes,menubar=yes,status=yes,toolbar=yes,width=100,height=100,left='+(screen.availWidth/2-50)+',top='+(screen.availHeight/2-50)+'');return false;" data-mce-onclick="" style="font-size: 10pt;"><span style="font-size: 10pt;">http://24gadget.ru/1161052613-samodelnyy-mini-tank-iz-dostupnyh-materialov-video.html</span></a> </span></div>
+<div><span style="font-size: 10pt;">
+<p><a hrefundefined=""></a><a href="http://grishinrobotics.com/1839" onclick="window.open(this.href,'gri','scrollbars=yes,resizable=yes,location=yes,menubar=yes,status=yes,toolbar=yes,width=100,height=100,left='+(screen.availWidth/2-50)+',top='+(screen.availHeight/2-50)+'');return false;" data-mce-onclick="">http://grishinrobotics.com/1839</a></p>
+</span></div>
+<div>
+<p>&nbsp;</p>
+</div>
+<p style="text-align: center;"><span style="font-size: 14pt;"><b><b style="text-align: center;"><strong>------------------------------------------30</strong><b>/09/2012</b><strong>------------------------------------------</strong></b></b></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: 14pt;"><span style="font-family: 'comic sans ms', sans-serif;">Object recognition while mapping for an&nbsp;</span><span style="font-family: 'comic sans ms', sans-serif;">autonomous robot vehicle [ Tanky ]</span></span></p>
+<p style="text-align: center;"><span style="font-size: 11px;">&nbsp;</span><span style="font-family: 'comic sans ms', sans-serif; font-size: 8pt;">&nbsp;</span>&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: 12pt;"><span style="font-family: 'comic sans ms', sans-serif;"><a href="http://robolex.com//tracked-robot/introduction">Project Introduction</a>&nbsp;• &nbsp;<a href="http://robolex.com//tracked-robot/robot-software">Robot Software</a>&nbsp;• &nbsp;<a href="http://robolex.com//tracked-robot/robot-hardware">Robot Hardware</a> &nbsp;• &nbsp;<a href="http://robolex.com//tracked-robot/tankys-videos">Videos</a>&nbsp;&nbsp;• &nbsp;</span><a href="http://robolex.com/images/stories/docs/mg_poster.pdf" onclick="window.open(this.href,'hello','scrollbars=yes,resizable=yes,location=yes,menubar=yes,status=yes,toolbar=yes,width=100,height=100,left='+(screen.availWidth/2-50)+',top='+(screen.availHeight/2-50)+'');return false;" data-mce-onclick="" style="font-family: 'comic sans ms', sans-serif; font-size: 14pt;">Project Poster</a></span></p>
+<p><span style="font-size: 14pt; font-family: 'comic sans ms', sans-serif;"><br /></span></p>
+<p style="text-align: center;">&nbsp;&nbsp;<img src="http://robolex.com/images/images_tracked_robot/thesis/image075.jpg" width="348" height="260" alt="image075" />&nbsp;<img src="http://robolex.com/images/images_tracked_robot/tanky_rest/top_view2.JPG" width="348" height="260" alt="top view2" /></p>
+<div>
+<p style="text-align: center;">Final robot version. New polycarbonate track pieces (Lexan), the RGB-D sensor and PVC supporting pipes for the laptop.</p>
+<p style="text-align: center;">&nbsp;</p>
+<p><img src="http://robolex.com/images/images_tracked_robot/tanky_rest/3dand2dcorrelation.PNG" width="750" height="275" alt="3dand2dcorrelation" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p style="text-align: center;">A 2D and 3D view of a scene. The view on the right shows how the robot extracts the planar components and recognisies a spherical object from the 3D pointcloud.</p>
+<p style="text-align: center;"><br />&nbsp;<img src="http://robolex.com/images/images_tracked_robot/thesis/image062.png" width="396" height="546" alt="image062" /></p>
+<p style="text-align: center;">Map derived from pointcloud data only. Red squares are possible object locations. The two squares that appear in the outside the map are possible locations but not accessible by the robot (e.g. an object on a library bookshelf)</p>
+<p style="text-align: center;">&nbsp;</p>
+<p><img src="http://robolex.com/images/images_tracked_robot/thesis/image070.png" width="400" height="287" alt="image070" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p style="text-align: center;">Path planning with selective obstacle inflation&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div><strong>
+<p style="text-align: center;"><span style="font-size: 14pt; color: #000000;"><b style="text-align: center;"><strong>------------------------------------------</strong><b>13/05/2012</b><strong>------------------------------------------</strong></b></span></p>
+<p style="text-align: center;"><b style="text-align: center;"><strong><br /></strong></b></p>
+</strong></div>
+<p><span style="font-family: 'comic sans ms', sans-serif; font-size: 18pt;">High power laser project [35W 808nm Laser diode]</span></p>
+<p><span style="font-family: 'comic sans ms', sans-serif; font-size: 18pt;"><br /></span></p>
+<p><a href="http://robolex.com//high-power-laser-diode" style="font-size: 12pt;">&nbsp;Project page!</a></p>
+<p>&nbsp;</p>
+<div></div>
+<div></div>
+<div></div>
+<p style="text-align: center;">&nbsp; &nbsp;<img src="http://robolex.com/images/images_laser/setup.jpg" width="333" height="250" alt="setup" /> <object width="327" height="250" classid="CLSID:D27CDB6E-AE6D-11CF-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,32,18" style="float: left;"><param name="movie" value="http://www.youtube.com/v/QCl5I6ezNRU?version=3&amp;hl=en_US&amp;rel=0" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="src" value="http://www.youtube.com/v/QCl5I6ezNRU?version=3&amp;hl=en_US&amp;rel=0" /><embed src="http://www.youtube.com/v/QCl5I6ezNRU?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="327" height="250" allowscriptaccess="always" allowfullscreen="true" movie="http://www.youtube.com/v/QCl5I6ezNRU?version=3&amp;hl=en_US&amp;rel=0" allowFullScreen="true"></embed></object></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: 14pt;"><strong><b style="text-align: center;"><strong>------------------------------------------</strong><b>12/05/2012</b><strong>------------------------------------------</strong></b></strong></span></p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: 14pt;"><strong>Student Autonomous Undewater Challenge - Europe</strong></span></p>
+<p><strong><a href="http://robolex.com/sauce/sauce-introduction">Project information</a></strong></p>
+<p>&nbsp;</p>
+<div style="text-align: center;"><strong><img src="http://robolex.com/images/images_submarine/IMG_0087-resized.jpg" width="225" height="300" alt="IMG 0087-resized" />&nbsp;&nbsp;<img src="http://robolex.com/images/images_submarine/IMG_0134-resized.jpg" width="400" height="300" alt="IMG 0134-resized" /></strong></div>
+<div></div>
+<p style="text-align: center;"><span style="font-size: 14pt;"><strong><b style="text-align: center;"><strong><br /></strong></b></strong></span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;"><strong><b style="text-align: center;"><strong><br /></strong></b></strong></span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;"><strong><b style="text-align: center;"><strong><br /></strong></b></strong></span></p>
+<p style="text-align: center;"><span style="font-size: 14pt;"><strong><b style="text-align: center;"><strong>------------------------------------------24</strong><b>/04/2012</b><strong>------------------------------------------</strong></b></strong></span></p>
+<div><strong><br /></strong></div>
+<p><span style="font-size: 18pt; font-family: 'courier new', courier;">Integrated Home Automation System [Documents]</span></p>
+<p><span style="font-size: 18pt; font-family: 'courier new', courier;"><br /></span></p>
+<p><span style="text-decoration: line-through;"><span style="font-family: 'courier new', courier; font-size: 12pt;">Actual thesis (general info on how everything works)<a href="http://robolex.com/images/stories/docs/ihas.pdf" onclick="window.open(this.href,'Thesis','scrollbars=yes,resizable=yes,location=yes,menubar=yes,status=yes,toolbar=yes,width=100,height=100,left='+(screen.availWidth/2-50)+',top='+(screen.availHeight/2-50)+'');return false;" data-mce-onclick=""></a></span></span></p>
+<p><span style="font-family: 'courier new', courier; font-size: 12pt;"><br /></span></p>
+<p><span style="font-family: 'courier new', courier; font-size: 12pt;"><a href="http://robolex.com/images/stories/docs/Appendices.pdf" onclick="window.open(this.href,'Appendix','scrollbars=yes,resizable=yes,location=yes,menubar=yes,status=yes,toolbar=yes,width=100,height=100,left='+(screen.availWidth/2-50)+',top='+(screen.availHeight/2-50)+'');return false;" data-mce-onclick="">Appendices(Measurements + schematic + layout)</a></span></p>
+<p><span style="font-family: 'courier new', courier; font-size: 12pt;"><br /></span></p>
+<p><span style="font-family: 'courier new', courier; font-size: 12pt;">Code (later)</span></p>
+<p><span style="font-family: 'courier new', courier; font-size: 18pt;"><br /></span></p>
+<p><object width="420" height="315" classid="CLSID:D27CDB6E-AE6D-11CF-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,32,18" style="display: block; margin-left: auto; margin-right: auto;"><param name="movie" value="http://www.youtube.com/v/Pr33HS42yeU?version=3&amp;hl=en_US" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="src" value="http://www.youtube.com/v/Pr33HS42yeU?version=3&amp;hl=en_US" /><embed src="http://www.youtube.com/v/Pr33HS42yeU?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true" movie="http://www.youtube.com/v/Pr33HS42yeU?version=3&amp;hl=en_US" allowFullScreen="true"></embed></object></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: 14pt;"><b style="text-align: center;"><strong>------------------------------------------29</strong><b>/11/2011</b><strong>------------------------------------------</strong></b></span></p>
+<p>&nbsp;DIY power supply! <a href="http://robolex.com/diy-high-power-supply-0-12v-0-35a">CLICK HERE</a></p>
+<p>&nbsp;</p>
+<p>{loadposition psu1}</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: 14pt;"><b style="text-align: center;"><strong>------------------------------------------30</strong><b>/09/2011</b><strong>------------------------------------------</strong></b></span></p>
+<p>A bit of site junk removal.</p>
+<p>Working on an autonomous tank robot at the moment.</p>
+<p>His name is <strong><a href="http://robolex.com//tracked-robot/tankys-videos">tanky</a></strong>. :-)</p>
+<p>&nbsp;</p>
+<p><object width="420" height="315" classid="CLSID:D27CDB6E-AE6D-11CF-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=10,0,32,18" style="display: block; margin-left: auto; margin-right: auto;"><param name="movie" value="http://www.youtube.com/v/nm2R9MIiUnA?version=3&amp;hl=en_US&amp;rel=0" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="src" value="http://www.youtube.com/v/nm2R9MIiUnA?version=3&amp;hl=en_US&amp;rel=0" /><embed src="http://www.youtube.com/v/nm2R9MIiUnA?version=3&amp;hl=en_US&amp;rel=0" type="application/x-shockwave-flash" width="420" height="315" allowscriptaccess="always" allowfullscreen="true" movie="http://www.youtube.com/v/nm2R9MIiUnA?version=3&amp;hl=en_US&amp;rel=0" allowFullScreen="true"></embed></object></p>
+<p>More info of how i made the tracks, gears, etc soon.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>{loadposition tanky4}</p>
+<p style="margin-top: 0px; margin-bottom: 5px;">&nbsp;</p>
+<p style="margin-top: 0px; margin-bottom: 5px;">&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: 14pt;"><b style="text-align: center;"><strong>------------------------------------------09</strong><b>/05/2011</b><strong>------------------------------------------</strong></b></span></p>
+<p>New stuff!</p>
+<p>Soon I'll be uploading a complete guide on how I've built a home automation system.&nbsp;</p>
+<p>*Added more articles under Home Automation</p>
+<p><img src="http://robolex.com/images/home_auto_final/cover.JPG" width="400" height="308" alt="cover" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p style="text-align: center;">&nbsp;<span style="font-size: 14pt;"><strong><b><strong>------------------------------------------07</strong><b>/12/2010</b><strong>------------------------------------------</strong></b></strong>&nbsp;</span></p>
+<p>At the moment im working towards my final year project which is a Home Automation device.</p>
+<p>The purpose is to have a main panel to control the house devices and read sensors wirelessly.</p>
+</div>]]></description>
+			<author>entrance321@hotmail.com (Administrator)</author>
+			<category>frontpage</category>
+			<pubDate>Sat, 11 Dec 2010 17:02:11 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
